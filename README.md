@@ -1,4 +1,4 @@
-# Awesome smol JS
+# Awesome Tiny JS
 
 A collection of tiny JS libraries to put your bundle on a diet. Curated by [Vladimir Klepov](https://blog.thoughtspile.tech) Rules:
 
@@ -50,12 +50,12 @@ Event emitter pattern is fairly easy to implement yourself, but why bother when 
 
 ## Reactive programming
 
-A step up from the raw event emitter, we reactive libraries can build chains of event transforms, filters, and side-effects. You can already use these to build UIs by manually updating DOM on state change:
+A step up from a raw event emitter, reactive libraries can build chains of event transforms, filters, and side-effects. You can already use these to build UIs by manually updating DOM on state change:
 
 - [hyperactiv](https://github.com/elbywan/hyperactiv) — 4 functions to make objects observable and listen to changes, in 1Kb.
-- [flimsy](https://github.com/fabiospampinato/flimsy) — 1Kb reactive core of [solid.js] that _almost_ fit into UI frameworks category. Author warning: _is probably buggier._
+- [flimsy](https://github.com/fabiospampinato/flimsy) — 1Kb reactive core of solid.js that _almost_ fit into UI frameworks category. Author warning: _is probably buggier._
 
-Honorable mentions: [callbag-basics](https://github.com/staltz/callbag-basics) and [oby](https://github.com/vobyjs/oby) _could_ make it _if_ they supported tree-shaking, but otherwise are around 7Kb.
+Honorable mentions: [callbag-basics](https://github.com/staltz/callbag-basics) and [oby](https://github.com/vobyjs/oby) _could_ make it _if_ they had tree-shaking, but otherwise are around 7Kb.
 
 ## State managers
 
@@ -63,27 +63,27 @@ State managers combine observable state with actions and framework bindings, int
 
 - [zustand](https://github.com/pmndrs/zustand) :star: — ~1Kb store with pleasant actions and selectors. React / vanilla.
 - [nanostores](https://github.com/nanostores/nanostores) — modular store in sub-1Kb with lots of framework connectors.
-- [storeon](https://github.com/storeon/storeon) — minimal 400-byte redux-styled store. React / preact / third-party connectors.
-- [unistore](https://github.com/developit/unistore) :star: — redux-styled store from preact developers. Has react support. Sub-1Kb.
-- [teaful](https://github.com/teafuljs/teaful) — React / preact store with useState-like API in 1Kb.
+- [storeon](https://github.com/storeon/storeon) — minimal 400-byte redux-styled store. (p)react, has third-party connectors.
+- [unistore](https://github.com/developit/unistore) :star: — sub-1Kb store with actions from preact developers, (p)react support.
+- [teaful](https://github.com/teafuljs/teaful) — (p)react store with useState-like API in 1Kb.
 
 ## Routers and URL utils
 
-Do stuff on URL / history changes. Maybe with framework bindings.
+Do stuff on URL / history changes, with path matching and parsing:
 
-- [wouter](https://github.com/molefrog/wouter) — Declarative routes for react / preact in 1.5Kb, or a 400-byte hook.
-- [navaid](https://github.com/lukeed/navaid) — history-based route parser & observer, sub-1Kb.
-- [routie](https://github.com/jgallen23/routie) — hash-based route parser & observer, sub-1Kb.
+- [wouter](https://github.com/molefrog/wouter) — Declarative routes for (p)react in 1.5Kb, or a 400-byte hook.
+- [navaid](https://github.com/lukeed/navaid) — history-based observable router, sub-1Kb.
+- [routie](https://github.com/jgallen23/routie) — hash-based observable router, sub-1Kb.
 
 Just want to parse or match URL paths without observing them? Here you go:
 
 - [matchit](https://github.com/lukeed/matchit) — route parser and matcher, sub-1Kb.
 - [regexparam](https://github.com/lukeed/regexparam) — convert path to regexp in 400 bytes.
-- [qss](https://github.com/lukeed/qss) — parse querystrings in 300b. Not sure you need it with good [URL API](https://developer.mozilla.org/en-US/docs/Web/API/URL) support.
+- [qss](https://github.com/lukeed/qss) — parse querystrings in 300b. Not sure you need it, [URL API](https://developer.mozilla.org/en-US/docs/Web/API/URL) support is good.
 
 ## API Layer
 
-`fetch` API has some boilerplate associated with it: serialize & parse data, reject on non-200 response, and so on. Here are tiny packages that handle it for you:
+`fetch` API has some boilerplate associated with it: serialize & parse data, reject on non-200 response, etc. These tiny packages handle it for you:
 
 - [redaxios](https://github.com/developit/redaxios) — drop-in axios replacement in 800 bytes.
 - [wretch](https://github.com/elbywan/wretch) — chainable API with error processing in 2Kb, and lots of extra plugins.
@@ -95,7 +95,7 @@ If for some reason you still need a fetch polyfill, try this one:
 
 ## I18N
 
-A map of strings might seem enough to translate an app, but these tools also handle interpolation and have some extra goodies:
+A map of strings might seem enough to translate an app, but these tools also handle interpolation and some extra goodies:
 
 - [@nanostores/i18n](https://github.com/nanostores/i18n) — detect locale, load dictionaries, format dates / numbers in sub-1Kb.
 - [rosetta](https://github.com/lukeed/rosetta) — bare-bones interpolation in 300 bytes.
