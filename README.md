@@ -52,6 +52,7 @@ Event emitter pattern is fairly easy to implement yourself, but why bother when 
 
 A step up from a raw event emitter, reactive libraries can build chains of event transforms, filters, and side-effects. You can already use these to build UIs by manually updating DOM on state change:
 
+- [flyd](https://github.com/paldepind/flyd) — rx-styled event streams in a 2Kb-ish package.
 - [hyperactiv](https://github.com/elbywan/hyperactiv) — 4 functions to make objects observable and listen to changes, in 1Kb.
 - [flimsy](https://github.com/fabiospampinato/flimsy) — 1Kb reactive core of solid.js that _almost_ fit into UI frameworks category. Author warning: _is probably buggier._
 
