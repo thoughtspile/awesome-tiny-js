@@ -74,15 +74,6 @@
 - Misc
   - https://github.com/planttheidea/micro-memoize
 
-## Unique ID generation
-
-Unique ID generation does not take a lot of code, as the most popular libraries are tiny, but it's not someting I'd want to write myself.
-
-- https://github.com/ai/nanoid
-- https://github.com/lukeed/uid
-- https://github.com/lukeed/uuid
-- https://github.com/lukeed/hexoid
-
 
 ## Dates & Time
 

@@ -18,13 +18,14 @@ Suggestions welcome! Please check that the lib you're suggesting is not already 
 
 ## Categories
 
-- [UI Frameworks](#ui-frameworks)
-- [Event Emitters](#event-emitters)
+- [UI frameworks](#ui-frameworks)
+- [Event emitters](#event-emitters)
 - [Reactive programming](#reactive-programming)
 - [State managers](#state-managers)
 - [Routers and URL utils](#routers-and-url-utils)
 - [API Layer](#api-layer)
 - [I18N](#i18n)
+- [Unique ID generation](#unique-id-generation)
 
 The list is actively updated to include more categories and tools.
 
@@ -108,6 +109,16 @@ A map of strings might seem enough to translate an app, but these tools also han
 - [rosetta](https://github.com/lukeed/rosetta) — bare-bones interpolation in 300 bytes.
 - [lingui](https://github.com/lingui/js-lingui) — 1.7Kb core with template strings and optional react connector. babel-depenent.
 - [eo-locale](https://github.com/ibitcy/eo-locale) — interpolation & dates / numbers in under 2Kb, including react bindings.
+
+
+## Unique ID generation
+
+Unique ID generation does not take a lot of code, but it's not someting I'd want to write myself. Limit is 500 bytes. Also note that the [native `crypto.randomUUID`](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/randomUUID) has [OK support.](https://caniuse.com/mdn-api_crypto_randomuuid)
+
+- [uuid](https://github.com/lukeed/uuid) :star: — real UUIDs in 240 bytes.
+- [nanoid](https://github.com/ai/nanoid) :star: — random IDs with larger alphabet in 130 bytes.
+- [uid](https://github.com/lukeed/uid) — can do in in 130–205 bytes.
+- [hexoid](https://github.com/lukeed/hexoid) — hex IDs in 190 bytes.
 
 ## To be continued!
 
