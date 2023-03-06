@@ -30,14 +30,20 @@ The list is actively updated to include more categories and tools.
 
 ## UI Frameworks
 
-UI frameworks (libraries?) provide declarative templates, event bindings, and observable state to update the view. I've been generous and expanded the size limit for this category to 4Kb, but also increased the star limit to 3K. These libs can be used to study how frameworks work under the hood.
+UI frameworks (libraries?) provide declarative templates, event bindings, and observable state to update the view. I've been generous and expanded the size limit for this category to 4Kb, but also increased the star limit to 3K. 
 
 - [preact](https://github.com/preactjs/preact) :star: — React-like API (pre-hooks) in 4Kb. Cool ecosystem of similarly tiny tools and components. Highly recommended.
+
+The following libraries are small and cool, but note they're about [500x less popular than preact.](https://npmtrends.com/fre-vs-hyperapp-vs-million-vs-preact-vs-redom-vs-riot) Kudos for deconstrucing the very essence of a "framework":
+
 - [million](https://github.com/aidenybai/million) — Marketed as a _drop-in replacement for React,_ but in under 2Kb.
 - [fre](https://github.com/frejs/fre) — React-like library with hooks and concurrency, 1–3Kb.
 - [hyperapp](https://github.com/jorgebucaran/hyperapp) — Declarative UI with pure JS syntax and immutable state, under 2Kb.
 - [redom](https://github.com/redom/redom) — Hyperapp-style templates with _imperative_ event listeners and updates, around 2Kb.
-- [umbrella](https://github.com/franciscop/umbrella) is not a _framework,_ but a jQuery-style DOM manipulation library in 3Kb.
+
+And if being declarative is not your thing:
+
+- [umbrella](https://github.com/franciscop/umbrella) — jQuery-style DOM manipulation library in 3Kb.
 
 ## Event emitters
 
