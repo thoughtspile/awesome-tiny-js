@@ -20,6 +20,12 @@
 - https://github.com/charlestati/amplify
 - https://github.com/chrisdavies/tiny-date-picker
 
+## CSS-in-JS
+
+- https://github.com/cristianbote/goober
+- https://github.com/morishitter/picostyle
+- https://github.com/sadick254/scoped-style
+
 ## DOM helpers
 
 - https://github.com/unjs/unhead
