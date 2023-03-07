@@ -82,6 +82,7 @@ Do stuff on URL / history changes, with path matching and parsing:
 - [wouter](https://github.com/molefrog/wouter) — Declarative routes for (p)react in 1.5Kb, or a 400-byte hook.
 - [navaid](https://github.com/lukeed/navaid) — history-based observable router, sub-1Kb.
 - [routie](https://github.com/jgallen23/routie) — hash-based observable router, sub-1Kb.
+- [@nanostores/router](https://github.com/nanostores/router) — tiny router for Nano Stores state manager, sub-1Kb.
 
 Just want to parse or match URL paths without observing them? Here you go:
 
