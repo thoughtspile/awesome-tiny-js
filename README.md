@@ -54,6 +54,7 @@ Event emitter pattern is fairly easy to implement yourself, but why bother when 
 - [nanoevents](https://github.com/ai/nanoevents) — smaller and with nicer unsubscribe API, but no '*' event.
 - [eev](https://github.com/chrisdavies/eev) — more of the same in 500b.
 - [onfire.js](https://github.com/hustcc/onfire.js) — 500b, but has `.once`.
+- [nano-event-bus](https://github.com/glebcha/nano-bus) - zero dependency event bus with jQuery-like API built on top of native custom events.
 
 ## Reactive programming
 
@@ -96,6 +97,7 @@ Just want to parse or match URL paths without observing them? Here you go:
 - [redaxios](https://github.com/developit/redaxios) — drop-in axios replacement in 800 bytes.
 - [wretch](https://github.com/elbywan/wretch) — chainable API with error processing in 2Kb, and lots of extra plugins.
 - [gretchen](https://github.com/truework/gretchen) — chainable API with type-safe errors in 2Kb.
+- [extended-fetch](https://github.com/glebcha/extended-fetch) - middleware, cancel by timeout and much more built on top of fetch with zero dependencies.
 
 If for some reason you still need a fetch polyfill, try this one:
 
