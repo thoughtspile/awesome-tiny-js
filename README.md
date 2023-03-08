@@ -14,8 +14,6 @@ Disclaimers:
 - I haven't used all these libraries personally. The ones I tried and enjoyed are marked with :star:
 - Most framework-specific libraries are for React, because that's what I'm familiar with.
 
-Suggestions welcome! Please check that the lib you're suggesting is not already in [WIP](./WIP.md) and drop an [issue](https://github.com/thoughtspile/awesome-tiny-js/issues).
-
 ## Categories
 
 - [UI frameworks](#ui-frameworks)
@@ -26,8 +24,11 @@ Suggestions welcome! Please check that the lib you're suggesting is not already 
 - [API Layer](#api-layer)
 - [I18N](#i18n)
 - [Unique ID generation](#unique-id-generation)
+- [Colors](#colors)
 
-The list is actively updated to include more categories and tools.
+The list is actively updated to include more categories and tools. 
+
+- Want to help? [Contributing][#contributing]
 
 ## UI Frameworks
 
@@ -121,9 +122,27 @@ Unique ID generation does not take a lot of code, but it's not someting I'd want
 - [uid](https://github.com/lukeed/uid) — can do in in 130–205 bytes.
 - [hexoid](https://github.com/lukeed/hexoid) — hex IDs in 190 bytes.
 
+## Colors
+
+Color manipulation is rare in pure UI development, but very helpful for data visualization, and uses [freaky math.](https://en.wikipedia.org/wiki/HSL_and_HSV#Color_conversion_formulae) Don't fry your brain, take these:
+
+- [colord](https://github.com/omgovich/colord) — manipulate colors and convert formats. 1.7Kb, exotic color spaces as plugins.
+- [colr](https://github.com/stayradiated/colr) — fits more color spaces, but fewer manipulations than colord, into 1.9Kb.
+- [randomcolor](https://github.com/davidmerfield/randomColor) — random attractive colors with configuration, just above 2Kb.
+- [polychrome](https://github.com/cdonohue/polychrome) — color manipulation in 2Kb.
+
 ## To be continued!
 
 See [WIP.md](./WIP.md) for a list of small libraries I have found, but not yet analyzed deeply.
+
+## Conributing
+
+Suggestions welcome! Please check that the lib you're suggesting:
+
+- Fits the [criteria.](#awesome-tiny-js)
+- Is not already in [WIP.](./WIP.md) 
+
+And drop a pull request or an [issue](https://github.com/thoughtspile/awesome-tiny-js/issues).
 
 ---
 
