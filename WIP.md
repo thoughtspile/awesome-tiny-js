@@ -127,3 +127,5 @@
   - https://github.com/js-cookie/js-cookie
 - https://github.com/nefe/number-precision
 - https://github.com/mgechev/tiny-compiler
+- https://github.com/komlev/tiny-use-media
+- https://github.com/komlev/tiny-use-detect-horizontal-overflow
