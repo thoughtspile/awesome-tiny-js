@@ -135,7 +135,7 @@ Color manipulation is rare in pure UI development, but very helpful for data vis
 
 See [WIP.md](./WIP.md) for a list of small libraries I have found, but not yet analyzed deeply.
 
-## Conributing
+## Contributing
 
 Suggestions welcome! Please check that the lib you're suggesting:
 
