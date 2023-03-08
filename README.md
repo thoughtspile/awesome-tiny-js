@@ -28,7 +28,7 @@ Disclaimers:
 
 The list is actively updated to include more categories and tools. 
 
-- Want to help? [Contributing][#contributing]
+- Want to help? [Contributing](#contributing)
 
 ## UI Frameworks
 
