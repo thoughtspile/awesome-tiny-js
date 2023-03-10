@@ -123,6 +123,8 @@ Something you'd find in lodash or ramda, but smaller. Most are pretty similar an
 - [@tinkoff/utils](https://github.com/Tinkoff/utils.js) — 173 helpers, 1 import per helper. Conservative browser target.
 - [@fxts/core](https://github.com/marpple/FxTS) — 96 tree-shakable helpers. Lazy evaluation support.
 
+Honorable mention: [underscore,](https://github.com/jashkenas/underscore) outshined by lodash by chance, contains many sub-1Kb helpers. It does not tree-shake as well as the libraries above due to codebase structure.
+
 Note: lodash itself is not tree-shakable, but has made many attempts at modulaity with `lodash.method` packages, imports from `lodash/method`, and `lodash-es`, none of which work well in practice. But yes, lodash does handle some corner cases.
 
 Also note that much of the original lodash functionality comes built-in with modern ES. Prefer native versions over libraries as your browser target allows.
