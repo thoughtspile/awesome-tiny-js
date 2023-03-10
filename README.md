@@ -23,6 +23,7 @@ Disclaimers:
 - [Routers and URL utils](#routers-and-url-utils)
 - [API Layer](#api-layer)
 - [I18N](#i18n)
+- [Generic utilities](#generic-utilities)
 - [Unique ID generation](#unique-id-generation)
 - [Colors](#colors)
 
@@ -112,6 +113,19 @@ A map of strings might seem enough to translate an app, but these tools also han
 - [lingui](https://github.com/lingui/js-lingui) — 1.7Kb core with template strings and optional react connector. babel-depenent.
 - [eo-locale](https://github.com/ibitcy/eo-locale) — interpolation & dates / numbers in under 2Kb, including react bindings.
 
+## Generic utilities
+
+Something you'd find in lodash or ramda, but smaller. Most are pretty similar and very small, with minor differences in package structure (single / package-per-helper) and tree shaking vs direct helper import.
+
+- [remeda](https://github.com/remeda/remeda) — 90 tree-shakable helpers.
+- [rambda](https://github.com/selfrefactor/rambda) — 187 tree-shakable helpers.
+- [just](https://github.com/angus-c/just) :star: — 82 helpers in separate packages.
+- [@tinkoff/utils](https://github.com/Tinkoff/utils.js) — 173 helpers, 1 import per helper. Conservative browser target.
+- [@fxts/core](https://github.com/marpple/FxTS) — 96 tree-shakable helpers. Lazy evaluation support.
+
+Note: lodash itself is not tree-shakable, but has made many attempts at modulaity with `lodash.method` packages, imports from `lodash/method`, and `lodash-es`, none of which work well in practice. But yes, lodash does handle some corner cases.
+
+Also note that much of the original lodash functionality comes built-in with modern ES. Prefer native versions over libraries as your browser target allows.
 
 ## Unique ID generation
 

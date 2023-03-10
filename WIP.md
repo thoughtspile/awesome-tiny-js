@@ -59,11 +59,6 @@
 
 ## Generic Utilities
 
-- Collections (lodash-like)
-  - https://github.com/angus-c/just
-  - https://github.com/marvinhagemeister/smoldash
-  - https://github.com/selfrefactor/rambda
-  - https://github.com/marpple/FxTS
 - Async
   - https://github.com/blend/promise-utils
   - https://github.com/ai/nanodelay
@@ -91,12 +86,6 @@
 - https://github.com/lukeed/ms
 - https://github.com/lukeed/fromnow
 - https://github.com/lukeed/sort-isostring
-
-## Colors
-
-- https://github.com/omgovich/colord
-- https://github.com/cdonohue/polychrome
-- https://github.com/davidmerfield/randomColor
 
 ## Logging
 
