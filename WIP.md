@@ -75,18 +75,6 @@
 - Misc
   - https://github.com/planttheidea/micro-memoize
 
-
-## Dates & Time
-
-- https://github.com/iamkun/dayjs
-- https://github.com/date-fns/date-fns/
-- https://github.com/hustcc/timeago.js
-- https://github.com/lukeed/tinydate
-- https://github.com/aweary/tinytime
-- https://github.com/lukeed/ms
-- https://github.com/lukeed/fromnow
-- https://github.com/lukeed/sort-isostring
-
 ## Logging
 
 - https://github.com/unjs/consola
@@ -124,3 +112,7 @@
 - https://github.com/mgechev/tiny-compiler
 - https://github.com/komlev/tiny-use-media
 - https://github.com/komlev/tiny-use-detect-horizontal-overflow
+
+## Waitlist
+
+- Date / time: https://github.com/masbagal/tempe

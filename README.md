@@ -22,6 +22,7 @@ Disclaimers:
 - [Routers and URL Utils](#routers-and-url-utils)
 - [API Layer](#api-layer)
 - [I18N](#i18n)
+- [Dates and Time](#dates--time)
 - [Generic Utilities](#generic-utilities)
 - [Unique ID Generation](#unique-id-generation)
 - [Colors](#colors)
@@ -69,6 +70,7 @@ State managers combine observable state with actions and framework bindings, int
 
 - [zustand](https://github.com/pmndrs/zustand) - ~1Kb store with pleasant actions and selectors. React / vanilla.
 - [nanostores](https://github.com/nanostores/nanostores) - Modular store in sub-1Kb with lots of framework connectors.
+- [reatom](https://github.com/artalar/reatom) — Reactive stores with a 2Kb core. React / svelte connectors cost extra.
 - [storeon](https://github.com/storeon/storeon) - Minimal 400-byte redux-styled store. (p)react, has third-party connectors.
 - [unistore](https://github.com/developit/unistore) - Sub-1Kb store with actions from preact developers, (p)react support.
 - [teaful](https://github.com/teafuljs/teaful) - (p)react store with useState-like API in 1Kb.
@@ -108,6 +110,24 @@ A map of strings might seem enough to translate an app, but these tools also han
 - [rosetta](https://github.com/lukeed/rosetta) - Bare-bones interpolation in 300 bytes.
 - [lingui](https://github.com/lingui/js-lingui) - 1.7Kb core with template strings and optional react connector. babel-depenent.
 - [eo-locale](https://github.com/ibitcy/eo-locale) - Interpolation & dates / numbers in under 2Kb, including react bindings.
+
+## Dates and Time
+
+Date and time manipulation in pure JS is quite verbose. Luckily, two of the top date libraries have sensible size:
+
+- [date-fns](https://github.com/date-fns/date-fns/) - Not tiny as a whole, but most functions are under 1Kb each (`format` is quite heavy).
+- [dayjs](https://github.com/iamkun/dayjs) - 2Kb-ish library with _alomost_ moment.js-compatible API, covers most use cases.
+
+And here are some more packages that only do formatting:
+
+- [tinytime](https://github.com/aweary/tinytime) - Simple 1Kb date formatter, like `{h}:{mm} -> 9:33`.
+- [tinydate](https://github.com/lukeed/tinydate) - 400-byte date formatter, only supports padded numeric format (September -> 09).
+- [time-stamp](https://github.com/jonschlinkert/time-stamp) - More of the same, in 700 bytes.
+- [ms](https://github.com/vercel/ms) - Parse & format ms durations, e.g. `"1m" <-> 60000`, in 900 bytes.
+- [timeago.js](https://github.com/hustcc/timeago.js) - Format dates into stuff like _X minutes ago_ or _in X hours,_ 2Kb.
+- [fromnow](https://github.com/lukeed/fromnow) - More of the same, but in 350 bytes.
+
+Note that the built-in [`Intl.DateTimeFormat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat) has decent support.
 
 ## Generic Utilities
 
