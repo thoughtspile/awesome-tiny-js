@@ -22,7 +22,7 @@ Disclaimers:
 - [Routers and URL Utils](#routers-and-url-utils)
 - [API Layer](#api-layer)
 - [I18N](#i18n)
-- [Dates and Time](#dates--time)
+- [Dates and Time](#dates-and-time)
 - [Generic Utilities](#generic-utilities)
 - [Unique ID Generation](#unique-id-generation)
 - [Colors](#colors)
