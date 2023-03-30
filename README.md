@@ -1,5 +1,9 @@
 # Awesome Tiny JS [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 
+<a href="https://github.com/thoughtspile/awesome-tiny-js/#awesome-tiny-js-">
+  <img src="./awesome-logo.png" width="300">
+</a>
+
 Tiny front-end libraries to put your bundle on a diet. Rules:
 
 - Size is under 2Kb-ish, min + gzip, with all deps, except where noted.
