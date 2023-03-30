@@ -1,6 +1,6 @@
 # Awesome Tiny JS [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 
-A collection of tiny JS libraries to put your bundle on a diet. Curated by [Vladimir Klepov](https://blog.thoughtspile.tech) Rules:
+Tiny front-end libraries to put your bundle on a diet. Rules:
 
 - Size is under 2Kb-ish, min + gzip, with all deps, except where noted.
 - For multi-purpose libraries, the size of a useful subset must be under 2Kb-ish.
@@ -26,7 +26,6 @@ Disclaimers:
 - [Generic Utilities](#generic-utilities)
 - [Unique ID Generation](#unique-id-generation)
 - [Colors](#colors)
-- [To be Continued](#to-be-continued)
 
 ## UI Frameworks
 
@@ -70,7 +69,7 @@ State managers combine observable state with actions and framework bindings, int
 
 - [zustand](https://github.com/pmndrs/zustand) - ~1Kb store with pleasant actions and selectors. React / vanilla.
 - [nanostores](https://github.com/nanostores/nanostores) - Modular store in sub-1Kb with lots of framework connectors.
-- [reatom](https://github.com/artalar/reatom) — Reactive stores with a 2Kb core. React / svelte connectors cost extra.
+- [reatom](https://github.com/artalar/reatom) - Reactive stores with a 2Kb core. React / svelte connectors cost extra.
 - [storeon](https://github.com/storeon/storeon) - Minimal 400-byte redux-styled store. (p)react, has third-party connectors.
 - [unistore](https://github.com/developit/unistore) - Sub-1Kb store with actions from preact developers, (p)react support.
 - [teaful](https://github.com/teafuljs/teaful) - (p)react store with useState-like API in 1Kb.
@@ -163,17 +162,12 @@ Color manipulation is rare in pure UI development, but very helpful for data vis
 - [randomcolor](https://github.com/davidmerfield/randomColor) - Random attractive colors with configuration, just above 2Kb.
 - [polychrome](https://github.com/cdonohue/polychrome) - Color manipulation in 2Kb.
 
-## To be Continued
+## Contributing
+
+Suggestions welcome! See [contributing.md](./contributing.md), or drop an [issue](https://github.com/thoughtspile/awesome-tiny-js/issues).
+
+## Footnotes
 
 See [WIP.md](./WIP.md) for a list of small libraries I have found, but not yet analyzed deeply.
 
-Suggestions welcome! Please check that the lib you're suggesting:
-
-- Fits the [criteria.](#awesome-tiny-js)
-- Is not already in [WIP.](./WIP.md) 
-
-And drop a pull request or an [issue](https://github.com/thoughtspile/awesome-tiny-js/issues).
-
----
-
-Collected and reviewed by [Vladimir Klepov](https://blog.thoughtspile.tech) in 2023. [CC0 license.](./LICENSE)
+Collected and reviewed by [Vladimir Klepov](https://blog.thoughtspile.tech) in 2023.
