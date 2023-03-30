@@ -112,12 +112,12 @@ A map of strings might seem enough to translate an app, but these tools also han
 
 ## Dates and Time
 
-Date and time manipulation in pure JS is quite verbose. Luckily, two of the top date libraries have sensible size:
+Date and time manipulation in pure JS is verbose. Luckily, two of the top date libraries have sensible size:
 
 - [date-fns](https://github.com/date-fns/date-fns/) - Not tiny as a whole, but most functions are under 1Kb each (`format` is quite heavy).
 - [dayjs](https://github.com/iamkun/dayjs) - 2Kb-ish library with _alomost_ moment.js-compatible API, covers most use cases.
 
-And here are some more packages that only do formatting:
+And some more packages that only do formatting:
 
 - [tinytime](https://github.com/aweary/tinytime) - Simple 1Kb date formatter, like `{h}:{mm} -> 9:33`.
 - [tinydate](https://github.com/lukeed/tinydate) - 400-byte date formatter, only supports padded numeric format (September -> 09).
@@ -140,7 +140,7 @@ Something you'd find in lodash or ramda, but smaller. Most are pretty similar an
 
 Honorable mention: [underscore,](https://github.com/jashkenas/underscore) outshined by lodash by chance, contains many sub-1Kb helpers. It does not tree-shake as well as the libraries above due to codebase structure.
 
-Note: lodash itself is not tree-shakable, but has made many attempts at modulaity with `lodash.method` packages, imports from `lodash/method`, and `lodash-es`, none of which work well in practice. But yes, lodash does handle some corner cases.
+Note: lodash itself is not tree-shakable, but has made many attempts at modulaity with `lodash.method` packages, imports from `lodash/method`, and `lodash-es`, none of which work well in practice.
 
 Also note that much of the original lodash functionality comes built-in with modern ES. Prefer native versions over libraries as your browser target allows.
 
