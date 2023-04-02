@@ -164,10 +164,10 @@ Color manipulation is rare in pure UI development, but very helpful for data vis
 
 ## Contributing
 
-Suggestions welcome! See [contributing.md](./contributing.md), or drop an [issue](https://github.com/thoughtspile/awesome-tiny-js/issues).
+Suggestions welcome! See [contributing.md](contributing.md), or drop an [issue](https://github.com/thoughtspile/awesome-tiny-js/issues).
 
 ## Footnotes
 
-See [WIP.md](./WIP.md) for a list of small libraries I have found, but not yet analyzed deeply.
+See [WIP.md](WIP.md) for a list of small libraries I have found, but not yet analyzed deeply.
 
 Collected and reviewed by [Vladimir Klepov](https://blog.thoughtspile.tech) in 2023.
