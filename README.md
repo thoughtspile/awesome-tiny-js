@@ -13,10 +13,6 @@ Tiny front-end libraries to put your bundle on a diet. Rules:
 - 100+ GitHub stars. Adding every obsure library will dilute the list.
 - No zero-JS (CSS- or type-only) libraries. It's not awesome-css or something.
 
-Disclaimers:
-
-- Most framework-specific libraries are for React, because that's what I'm familiar with.
-
 ## Contents
 
 - [UI Frameworks](#ui-frameworks)
