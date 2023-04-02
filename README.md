@@ -1,8 +1,10 @@
 # Awesome Tiny JS [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 
-<a href="https://github.com/thoughtspile/awesome-tiny-js/#awesome-tiny-js-">
-  <img src="./awesome-logo.png" width="300">
-</a>
+<div align="center">
+  <a href="https://github.com/thoughtspile/awesome-tiny-js#readme">
+    <img src="./awesome-logo.png" width="300">
+  </a>
+</div>
 
 Tiny front-end libraries to put your bundle on a diet. Rules:
 
