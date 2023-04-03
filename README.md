@@ -2,7 +2,7 @@
 
 <div align="center">
   <a href="https://github.com/thoughtspile/awesome-tiny-js#readme">
-    <img src="./awesome-logo.png" width="300">
+    <img src="./awesome-logo.png" width="300" height="207">
   </a>
 </div>
 
