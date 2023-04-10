@@ -170,6 +170,6 @@ Suggestions welcome! See [contributing.md](contributing.md), or drop an [issue](
 
 ## Footnotes
 
-See [WIP.md](WIP.md) for a list of small libraries I have found, but not yet analyzed deeply.
+See [WIP](wip.md) for possibly awesome libraries I have found, but not yet analyzed deeply, and [incubate](incubate.md) for awesome libraries that don't meet popularity criteria yet.
 
 Collected and reviewed by [Vladimir Klepov](https://blog.thoughtspile.tech) in 2023.
