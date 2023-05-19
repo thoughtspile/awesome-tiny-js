@@ -75,6 +75,7 @@ State managers combine observable state with actions and framework bindings, int
 - [storeon](https://github.com/storeon/storeon) - Minimal 400-byte redux-styled store. (p)react, has third-party connectors.
 - [unistore](https://github.com/developit/unistore) - Sub-1 kB store with actions from preact developers, (p)react support.
 - [teaful](https://github.com/teafuljs/teaful) - (p)react store with useState-like API in 1 kB.
+- [exome](https://github.com/marcisbee/exome) - Sub-1 kB atomic store with lots of framework connectors.
 
 ## Routers and URL Utils
 
