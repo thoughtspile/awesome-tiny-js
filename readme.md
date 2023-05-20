@@ -33,36 +33,36 @@ Tiny front-end libraries to put your bundle on a diet. Rules:
 
 UI frameworks (libraries?) provide declarative templates, event bindings, and observable state to update the view. I've been generous and expanded the size limit for this category to 4.5 kB (if you're boring, count them as 2 libraries), but also increased the star limit to 2K. 
 
-- [preact](https://github.com/preactjs/preact) - React-like API (pre-hooks). Cool ecosystem of similarly tiny tools and components. Highly recommended. <img src="https://img.shields.io/bundlephobia/minzip/preact?label=" style="margin-bottom: -6px">
+- [preact](https://github.com/preactjs/preact) - React-like API (pre-hooks). Cool ecosystem of similarly tiny tools and components. Highly recommended. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/preact.svg?label=">
 
 The following libraries are small and cool, but note they're about [500x less popular than preact.](https://npmtrends.com/fre-vs-hyperapp-vs-million-vs-preact-vs-redom-vs-riot) Kudos for deconstrucing the very essence of a "framework":
 
-- [million](https://github.com/aidenybai/million) - Marketed as a _drop-in replacement for React._ <img src="https://img.shields.io/bundlephobia/minzip/million?label=" style="margin-bottom: -6px">
-- [fre](https://github.com/frejs/fre) - React-like library with hooks and concurrency, 1–3 kB. <img src="https://img.shields.io/bundlephobia/minzip/fre?label=" style="margin-bottom: -6px">
-- [hyperapp](https://github.com/jorgebucaran/hyperapp) - Declarative UI with pure JS syntax and immutable state. <img src="https://img.shields.io/bundlephobia/minzip/hyperapp?label=" style="margin-bottom: -6px">
-- [redom](https://github.com/redom/redom) - Hyperapp-style templates with _imperative_ event listeners and updates. <img src="https://img.shields.io/bundlephobia/minzip/redom?label=" style="margin-bottom: -6px">
+- [million](https://github.com/aidenybai/million) - Marketed as a _drop-in replacement for React._ <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/million.svg?label=">
+- [fre](https://github.com/frejs/fre) - React-like library with hooks and concurrency, 1–3 kB. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/fre.svg?label=">
+- [hyperapp](https://github.com/jorgebucaran/hyperapp) - Declarative UI with pure JS syntax and immutable state. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/hyperapp.svg?label=">
+- [redom](https://github.com/redom/redom) - Hyperapp-style templates with _imperative_ event listeners and updates. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/redom.svg?label=">
 
 And if being declarative is not your thing:
 
-- [umbrella](https://github.com/franciscop/umbrella) - jQuery-style DOM manipulation library. <img src="https://img.shields.io/bundlephobia/minzip/umbrellajs?label=" style="margin-bottom: -6px">
+- [umbrella](https://github.com/franciscop/umbrella) - jQuery-style DOM manipulation library. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/umbrellajs.svg?label=">
 
 ## Event Emitters
 
 Event emitter pattern is fairly easy to implement yourself, but why bother when you have these cool tools? With an arms race to build the smallest one, the limit is 0.5 kB.
 
-- [mitt](https://github.com/developit/mitt) - Plain event emitter that I use on most projects. <img src="https://img.shields.io/bundlephobia/minzip/mitt?label=" style="margin-bottom: -6px">
-- [nanoevents](https://github.com/ai/nanoevents) - Nicer unsubscribe API, but no `*` event. <img src="https://img.shields.io/bundlephobia/minzip/nanoevents?label=" style="margin-bottom: -6px">
-- [eev](https://github.com/chrisdavies/eev) - More of the same. <img src="https://img.shields.io/bundlephobia/minzip/eev?label=" style="margin-bottom: -6px">
-- [onfire.js](https://github.com/hustcc/onfire.js) - Also has `.once` method. <img src="https://img.shields.io/bundlephobia/minzip/onfire.js?label=" style="margin-bottom: -6px">
+- [mitt](https://github.com/developit/mitt) - Plain event emitter that I use on most projects. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/mitt.svg?label=">
+- [nanoevents](https://github.com/ai/nanoevents) - Nicer unsubscribe API, but no `*` event. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/nanoevents.svg?label=">
+- [eev](https://github.com/chrisdavies/eev) - More of the same. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/eev.svg?label=">
+- [onfire.js](https://github.com/hustcc/onfire.js) - Also has `.once` method. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/onfire.js.svg?label=">
 
 ## Reactive Programming
 
 A step up from a raw event emitter, reactive libraries can build chains of event transforms, filters, and side-effects. You can already use these to build UIs by manually updating DOM on state change:
 
-- [flyd](https://github.com/paldepind/flyd) - Rx-styled event streams. <img src="https://img.shields.io/bundlephobia/minzip/flyd?label=" style="margin-bottom: -6px">
-- [callbag-basics](https://github.com/staltz/callbag-basics) - Rx-style event streams. <img src="https://img.shields.io/bundlephobia/minzip/callbag-basics?label=" style="margin-bottom: -6px">
-- [hyperactiv](https://github.com/elbywan/hyperactiv) - 4 functions to make objects observable and listen to changes (mobx-style), in 1 kB. <img src="https://img.shields.io/bundlephobia/minzip/hyperactiv?label=" style="margin-bottom: -6px">
-- [flimsy](https://github.com/fabiospampinato/flimsy) - 1 kB signals from Solid (it _almost_ fit into UI frameworks category). Author warning: _it's probably buggy._ <img src="https://img.shields.io/bundlephobia/minzip/flimsy?label=" style="margin-bottom: -6px">
+- [flyd](https://github.com/paldepind/flyd) - Rx-styled event streams. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/flyd.svg?label=">
+- [callbag-basics](https://github.com/staltz/callbag-basics) - Rx-style event streams. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/callbag-basics.svg?label=">
+- [hyperactiv](https://github.com/elbywan/hyperactiv) - 4 functions to make objects observable and listen to changes (mobx-style), in 1 kB. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/hyperactiv.svg?label=">
+- [flimsy](https://github.com/fabiospampinato/flimsy) - 1 kB signals from Solid (it _almost_ fit into UI frameworks category). Author warning: _it's probably buggy._ <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/flimsy.svg?label=">
 
 Honorable mention: [oby](https://github.com/vobyjs/oby) _could_ make it _if_ it had tree-shaking, but otherwise is around 7 kB.
 
@@ -70,65 +70,65 @@ Honorable mention: [oby](https://github.com/vobyjs/oby) _could_ make it _if_ it 
 
 State managers combine observable state with actions and framework bindings, intended for app-wide state.
 
-- [zustand](https://github.com/pmndrs/zustand) - Simple stores with pleasant actions and selectors. React <img src="https://img.shields.io/bundlephobia/minzip/zustand?label=" style="margin-bottom: -6px"> or vanilla <img src="https://deno.bundlejs.com/?q=zustand/vanilla&badge=" style="margin-bottom: -6px">
-- [nanostores](https://github.com/nanostores/nanostores) - Modular store with good tree-shaking support <img style="margin-bottom: -6px" src="https://img.shields.io/bundlephobia/minzip/zustand?label="> Lots of framework connectors (e.g. React <img style="margin-bottom: -6px" src="https://img.shields.io/bundlephobia/minzip/@nanostores/react?label=">).
-- [exome](https://github.com/marcisbee/exome) - Atomic store with lots of framework connectors <img style="margin-bottom: -6px" src="https://img.shields.io/bundlephobia/minzip/exome?label=">
-- [reatom](https://github.com/artalar/reatom) - Reactive stores. <img src="https://img.shields.io/bundlephobia/minzip/@reatom/core?label=" style="margin-bottom: -6px">
-- [storeon](https://github.com/storeon/storeon) - Minimal redux-styled store with lots of framework connectors <img src="https://img.shields.io/bundlephobia/minzip/storeon?label=" style="margin-bottom: -6px">
-- [unistore](https://github.com/developit/unistore) - Centralized store with actions for React / preact <img src="https://img.shields.io/bundlephobia/minzip/unistore?label=" style="margin-bottom: -6px">
-- [teaful](https://github.com/teafuljs/teaful) - Store with useState-like API for React / preact <img src="https://img.shields.io/bundlephobia/minzip/teaful?label=" style="margin-bottom: -6px">
+- [zustand](https://github.com/pmndrs/zustand) - Simple stores with pleasant actions and selectors. React <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/zustand.svg?label="> or vanilla <img align="top" height="24" src="https://deno.bundlejs.com/?q=zustand/vanilla&badge=">
+- [nanostores](https://github.com/nanostores/nanostores) - Modular store with good tree-shaking support <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/zustand.svg?label="> Lots of framework connectors (e.g. React <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/@nanostores/react.svg?label=">).
+- [exome](https://github.com/marcisbee/exome) - Atomic store with lots of framework connectors <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/exome.svg?label=">
+- [reatom](https://github.com/artalar/reatom) - Reactive stores. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/@reatom/core.svg?label=">
+- [storeon](https://github.com/storeon/storeon) - Minimal redux-styled store with lots of framework connectors <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/storeon.svg?label=">
+- [unistore](https://github.com/developit/unistore) - Centralized store with actions for React / preact <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/unistore.svg?label=">
+- [teaful](https://github.com/teafuljs/teaful) - Store with useState-like API for React / preact <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/teaful.svg?label=">
 
 ## Routers and URL Utils
 
 Do stuff on URL / history changes, with path matching and parsing:
 
-- [wouter](https://github.com/molefrog/wouter) - Declarative router for (p)react <img src="https://img.shields.io/bundlephobia/minzip/wouter?label=" style="margin-bottom: -6px">, also available as a 400-byte hook.
-- [@nanostores/router](https://github.com/nanostores/router) - Routes as a nanostores store (framework-agnostic) <img src="https://img.shields.io/bundlephobia/minzip/@nanostores/router?label=" style="margin-bottom: -6px">
-- [navaid](https://github.com/lukeed/navaid) - History-based observable router <img src="https://img.shields.io/bundlephobia/minzip/navaid?label=" style="margin-bottom: -6px">
-- [routie](https://github.com/jgallen23/routie) - Hash-based observable router <img src="https://img.shields.io/bundlephobia/minzip/routie?label=" style="margin-bottom: -6px">
+- [wouter](https://github.com/molefrog/wouter) - Declarative router for (p)react <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/wouter.svg?label=">, also available as a 400-byte hook.
+- [@nanostores/router](https://github.com/nanostores/router) - Routes as a nanostores store (framework-agnostic) <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/@nanostores/router.svg?label=">
+- [navaid](https://github.com/lukeed/navaid) - History-based observable router <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/navaid.svg?label=">
+- [routie](https://github.com/jgallen23/routie) - Hash-based observable router <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/routie.svg?label=">
 
 Just want to parse or match URL paths without observing them? Here you go:
 
-- [matchit](https://github.com/lukeed/matchit) - Route parser and matcher in <img src="https://img.shields.io/bundlephobia/minzip/matchit?label=" style="margin-bottom: -6px">
-- [regexparam](https://github.com/lukeed/regexparam) - Convert path to regexp in <img src="https://img.shields.io/bundlephobia/minzip/regexparam?label=" style="margin-bottom: -6px">
-- [qss](https://github.com/lukeed/qss) - Parse querystrings <img src="https://img.shields.io/bundlephobia/minzip/qss?label=" style="margin-bottom: -6px">. Not sure you need it, [URL API](https://developer.mozilla.org/en-US/docs/Web/API/URL) support is good. 
+- [matchit](https://github.com/lukeed/matchit) - Route parser and matcher in <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/matchit.svg?label=">
+- [regexparam](https://github.com/lukeed/regexparam) - Convert path to regexp in <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/regexparam.svg?label=">
+- [qss](https://github.com/lukeed/qss) - Parse querystrings <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/qss.svg?label=">. Not sure you need it, [URL API](https://developer.mozilla.org/en-US/docs/Web/API/URL) support is good. 
 
 ## API Layer
 
 `fetch` API has some boilerplate associated with it: serialize & parse data, reject on non-200 response, etc. These tiny packages handle it for you:
 
-- [redaxios](https://github.com/developit/redaxios) - Drop-in axios replacement for modern browsers <img src="https://img.shields.io/bundlephobia/minzip/redaxios?label=" style="margin-bottom: -6px">
-- [wretch](https://github.com/elbywan/wretch) - Chainable API with error processing and lots of extra plugins. <img src="https://img.shields.io/bundlephobia/minzip/wretch?label=" style="margin-bottom: -6px">
-- [gretchen](https://github.com/truework/gretchen) - Chainable API with type-safe errors. <img src="https://img.shields.io/bundlephobia/minzip/gretchen?label=" style="margin-bottom: -6px">
+- [redaxios](https://github.com/developit/redaxios) - Drop-in axios replacement for modern browsers <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/redaxios.svg?label=">
+- [wretch](https://github.com/elbywan/wretch) - Chainable API with error processing and lots of extra plugins. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/wretch.svg?label=">
+- [gretchen](https://github.com/truework/gretchen) - Chainable API with type-safe errors. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/gretchen.svg?label=">
 
 If for some reason you still need a fetch polyfill, try this one:
 
-- [unfetch](https://github.com/developit/unfetch) - Loose fetch polyfill. <img src="https://img.shields.io/bundlephobia/minzip/unfetch?label=" style="margin-bottom: -6px">
+- [unfetch](https://github.com/developit/unfetch) - Loose fetch polyfill. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/unfetch.svg?label=">
 
 ## I18N
 
 A map of strings might seem enough to translate an app, but these tools also handle interpolation and some extra goodies:
 
-- [@nanostores/i18n](https://github.com/nanostores/i18n) - Detect locale, load dictionaries, format dates / numbers. <img src="https://img.shields.io/bundlephobia/minzip/@nanostores/i18n?label=" style="margin-bottom: -6px">
-- [rosetta](https://github.com/lukeed/rosetta) - Bare-bones template strings (`{{hello}}, {{username}}`) and custom functions for everyting else. <img src="https://img.shields.io/bundlephobia/minzip/rosetta?label=" style="margin-bottom: -6px">
-- [lingui](https://github.com/lingui/js-lingui) - small core with template strings, babel-depenent. <img src="https://img.shields.io/bundlephobia/minzip/@lingui/core?label=" style="margin-bottom: -6px"> Optional react connector: <img src="https://img.shields.io/bundlephobia/minzip/@lingui/react?label=" style="margin-bottom: -6px">
-- [eo-locale](https://github.com/ibitcy/eo-locale) - Interpolation & dates / numbers, <img src="https://img.shields.io/bundlephobia/minzip/eo-locale?label=" style="margin-bottom: -6px"> including react bindings.
+- [@nanostores/i18n](https://github.com/nanostores/i18n) - Detect locale, load dictionaries, format dates / numbers. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/@nanostores/i18n.svg?label=">
+- [rosetta](https://github.com/lukeed/rosetta) - Bare-bones template strings (`{{hello}}, {{username}}`) and custom functions for everyting else. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/rosetta.svg?label=">
+- [lingui](https://github.com/lingui/js-lingui) - small core with template strings, babel-depenent. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/@lingui/core.svg?label="> Optional react connector: <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/@lingui/react.svg?label=">
+- [eo-locale](https://github.com/ibitcy/eo-locale) - Interpolation & dates / numbers, <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/eo-locale.svg?label="> including react bindings.
 
 ## Dates and Time
 
 Date and time manipulation in pure JS is verbose. Luckily, two of the top date libraries have sensible size:
 
 - [date-fns](https://github.com/date-fns/date-fns/) - Not tiny as a whole, but [most functions](https://bundlephobia.com/package/date-fns) are under 1 kB each (format and parse are quite heavy).
-- [dayjs](https://github.com/iamkun/dayjs) - _Almost_ moment.js-compatible API, covers most use cases. <img src="https://img.shields.io/bundlephobia/minzip/dayjs?label=" style="margin-bottom: -6px">
+- [dayjs](https://github.com/iamkun/dayjs) - _Almost_ moment.js-compatible API, covers most use cases. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/dayjs.svg?label=">
 
 And some more packages that only do formatting:
 
-- [tinytime](https://github.com/aweary/tinytime) - Simple date / time formatter: `{h}:{mm} -> 9:33`. <img src="https://img.shields.io/bundlephobia/minzip/tinytime?label=" style="margin-bottom: -6px">
-- [tinydate](https://github.com/lukeed/tinydate) - Date / time formatter, only supports padded numeric output (`September -> 09`). <img src="https://img.shields.io/bundlephobia/minzip/tinydate?label=" style="margin-bottom: -6px">
-- [time-stamp](https://github.com/jonschlinkert/time-stamp) - More of the same. <img src="https://img.shields.io/bundlephobia/minzip/time-stamp?label=" style="margin-bottom: -6px">
-- [ms](https://github.com/vercel/ms) - Parse & format ms durations, e.g. `"1m" <-> 60000`. <img src="https://img.shields.io/bundlephobia/minzip/ms?label=" style="margin-bottom: -6px">
-- [timeago.js](https://github.com/hustcc/timeago.js) - Format dates into stuff like _X minutes ago_ or _in X hours._ <img src="https://img.shields.io/bundlephobia/minzip/timeago.js?label=" style="margin-bottom: -6px">
-- [fromnow](https://github.com/lukeed/fromnow) - More of the same. <img src="https://img.shields.io/bundlephobia/minzip/fromnow?label=" style="margin-bottom: -6px">
+- [tinytime](https://github.com/aweary/tinytime) - Simple date / time formatter: `{h}:{mm} -> 9:33`. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/tinytime.svg?label=">
+- [tinydate](https://github.com/lukeed/tinydate) - Date / time formatter, only supports padded numeric output (`September -> 09`). <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/tinydate.svg?label=">
+- [time-stamp](https://github.com/jonschlinkert/time-stamp) - More of the same. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/time-stamp.svg?label=">
+- [ms](https://github.com/vercel/ms) - Parse & format ms durations, e.g. `"1m" <-> 60000`. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/ms.svg?label=">
+- [timeago.js](https://github.com/hustcc/timeago.js) - Format dates into stuff like _X minutes ago_ or _in X hours._ <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/timeago.js.svg?label=">
+- [fromnow](https://github.com/lukeed/fromnow) - More of the same. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/fromnow.svg?label=">
 
 Note that the built-in [`Intl.DateTimeFormat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat) has decent support.
 
@@ -152,20 +152,19 @@ Also note that much of the original lodash functionality comes built-in with mod
 
 Unique ID generation does not take a lot of code, but it's not someting I'd want to write myself. Limit is 500 bytes. Also note that the [native `crypto.randomUUID`](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/randomUUID) has [OK support.](https://caniuse.com/mdn-api_crypto_randomuuid)
 
-- [@lukeed/uuid](https://github.com/lukeed/uuid) - Real UUIDs, <img src="https://img.shields.io/bundlephobia/minzip/@lukeed/uuid?label=" style="margin-bottom: -6px">
-- [nanoid](https://github.com/ai/nanoid) - Random IDs with larger alphabet, <img src="https://img.shields.io/bundlephobia/minzip/nanoid?label=" style="margin-bottom: -6px">
-- [uid](https://github.com/lukeed/uid) - More of the same, <img src="https://img.shields.io/bundlephobia/minzip/uid?label=" style="margin-bottom: -6px">
-- [hexoid](https://github.com/lukeed/hexoid) - Hexadecimal IDs, <img src="https://img.shields.io/bundlephobia/minzip/hexoid?label=" style="margin-bottom: -6px">
+- [@lukeed/uuid](https://github.com/lukeed/uuid) - Real UUIDs, <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/@lukeed/uuid.svg?label=">
+- [nanoid](https://github.com/ai/nanoid) - Random IDs with larger alphabet, <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/nanoid.svg?label=">
+- [uid](https://github.com/lukeed/uid) - More of the same, <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/uid.svg?label=">
+- [hexoid](https://github.com/lukeed/hexoid) - Hexadecimal IDs, <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/hexoid.svg?label=">
 
 ## Colors
 
 Color manipulation is rare in pure UI development, but very helpful for data visualization, and uses [freaky math.](https://en.wikipedia.org/wiki/HSL_and_HSV#Color_conversion_formulae) Don't fry your brain, take these:
 
-- [colord](https://github.com/omgovich/colord) - Manipulate colors and convert between spaces <img src="https://img.shields.io/bundlephobia/minzip/colord?label=" style="margin-bottom: -6px"> Extra features come as plugins, 150b to 1.5 kB each.
-- [colr](https://github.com/stayradiated/colr) - Manipulate colors and convert between spaces in <img src="https://img.shields.io/bundlephobia/minzip/colr?label=" 
-style="margin-bottom: -6px">
-- [polychrome](https://github.com/cdonohue/polychrome) - Color manipulation <img src="https://img.shields.io/bundlephobia/minzip/polychrome?label=" style="margin-bottom: -6px">
-- [randomcolor](https://github.com/davidmerfield/randomColor) - Attractive random colors with configuration. <img src="https://img.shields.io/bundlephobia/minzip/randomcolor?label=" style="margin-bottom: -6px">
+- [colord](https://github.com/omgovich/colord) - Manipulate colors and convert between spaces <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/colord.svg?label="> Extra features come as plugins, 150b to 1.5 kB each.
+- [colr](https://github.com/stayradiated/colr) - Manipulate colors and convert between spaces in <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/colr.svg?label=" >
+- [polychrome](https://github.com/cdonohue/polychrome) - Color manipulation <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/polychrome.svg?label=">
+- [randomcolor](https://github.com/davidmerfield/randomColor) - Attractive random colors with configuration. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/randomcolor.svg?label=">
 
 ## Contributing
 
