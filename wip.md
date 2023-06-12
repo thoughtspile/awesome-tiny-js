@@ -1,4 +1,3 @@
-
 ## Components
 
 - https://github.com/vuejs-tips/v-money
@@ -45,9 +44,6 @@
 - Sorting
   - https://github.com/Sjeiti/TinySort
   - https://github.com/tofsjonas/sortable
-- Gesture recognition
-  - https://github.com/AlloyTeam/AlloyFinger
-  - https://github.com/sciactive/tinygesture
 - Form validation
   - https://github.com/sha256/Pristine
   - https://github.com/lukeed/formee
