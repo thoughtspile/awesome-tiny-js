@@ -28,6 +28,7 @@ Tiny front-end libraries to put your bundle on a diet. Rules:
 - [Generic Utilities](#generic-utilities)
 - [Unique ID Generation](#unique-id-generation)
 - [Colors](#colors)
+- [Touch Gestures](#touch-gestures)
 
 ## UI Frameworks
 
@@ -165,6 +166,20 @@ Color manipulation is rare in pure UI development, but very helpful for data vis
 - [colr](https://github.com/stayradiated/colr) - More of the same, <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/colr.svg?label=&color=grey" >
 - [polychrome](https://github.com/cdonohue/polychrome) - More of the same, <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/polychrome.svg?label=&color=grey">
 - [randomcolor](https://github.com/davidmerfield/randomColor) - Attractive random colors with configuration. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/randomcolor.svg?label=&color=grey">
+
+## Touch Gestures
+
+Touch gestures like swipe, drag, pinch or doubletap are a staple of mobile UX, but recognizing a series of touchmove / pointer events as a gesture is tricky, and testing is painful. Here are two libraries that do the heavy lifting for you:
+
+- [alloyfinger](https://github.com/AlloyTeam/AlloyFinger) - Pan, swipe, tap, doubletap, longpress, _and_ pinch / rotate. My personal favorite. <img align="top" height="24" src="https://deno.bundlejs.com/?q=alloyfinger&badge=">.
+- [tinygesture](https://github.com/sciactive/tinygesture) - Configurable pan, swipe, tap, doubletap, longpress. <img align="top" height="24" src="https://deno.bundlejs.com/?q=tinygesture&badge=">.
+
+Even if you want to detect gestures yourself, juggling mouse, touch and pointer events is hard enough, and browser inconsistencies don't help. Here are two more libraries to assist with that:
+
+- [pointer-tracker](https://github.com/GoogleChromeLabs/pointer-tracker) - Unified interface for mouse, touch and pointer events, <img align="top" height="24" src="https://deno.bundlejs.com/?q=pointer-tracker&badge=">
+- [detect-it](https://github.com/rafgraph/detect-it) - Detect present and primary input method (touch / mouse) and supported events, <img align="top" height="24" src="https://deno.bundlejs.com/?q=detect-it&badge=">.
+
+Honorable mentions: [any-touch](https://github.com/any86/any-touch) attempts a modular approach to gesture detection, but the core is around 2 kB without any gesture recognizers. [rc-gesture,](https://github.com/react-component/gesture) used in ant design system, could be the only react component on the list, but babel-runtime / corejs polyfills hard-wired into the build push the ~2.5 kB size to over 10 kB.
 
 ## Contributing
 
