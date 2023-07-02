@@ -29,6 +29,7 @@ Tiny front-end libraries to put your bundle on a diet. Rules:
 - [Unique ID Generation](#unique-id-generation)
 - [Colors](#colors)
 - [Touch Gestures](#touch-gestures)
+- [Text Search](#text-search)
 
 ## UI Frameworks
 
@@ -177,9 +178,41 @@ Touch gestures like swipe, drag, pinch or doubletap are a staple of mobile UX, b
 Even if you want to detect gestures yourself, juggling mouse, touch and pointer events is hard enough, and browser inconsistencies don't help. Here are two more libraries to assist with that:
 
 - [pointer-tracker](https://github.com/GoogleChromeLabs/pointer-tracker) - Unified interface for mouse, touch and pointer events, <img align="top" height="24" src="https://deno.bundlejs.com/?q=pointer-tracker&badge=">
-- [detect-it](https://github.com/rafgraph/detect-it) - Detect present and primary input method (touch / mouse) and supported events, <img align="top" height="24" src="https://deno.bundlejs.com/?q=detect-it&badge=">.
+- [detect-it](https://github.com/rafgraph/detect-it) - Detect present and primary input method (touch / mouse) and supported events, <img align="top" height="24" src="https://deno.bundlejs.com/?q=detect-it&badge=">
 
 Honorable mentions: [any-touch](https://github.com/any86/any-touch) attempts a modular approach to gesture detection, but the core is around 2 kB without any gesture recognizers. [rc-gesture,](https://github.com/react-component/gesture) used in ant design system, could be the only react component on the list, but babel-runtime / corejs polyfills hard-wired into the build push the ~2.5 kB size to over 10 kB.
+
+## Text Search
+
+Text search is important for client-side filtering and autosuggests. Naive `option.includes(search)` has no sensible order on the results, and ignoring word boundaries gives unexpected matches like _spa -> newSPAper._ First, here are some libraries that prioritize word matches:
+
+- [js-search](https://github.com/bvaughn/js-search) - Feature-rich and customizable: multi-field indices, stop words, custom stemmers and tokenizers. <img align="top" height="24" src="https://deno.bundlejs.com/?q=js-search&treeshake=[{+Search+}]&badge=">
+- [ndx](https://github.com/localvoid/ndx) - Similar to js-search, differs in [ranking](https://kmwllc.com/index.php/2020/03/20/understanding-tf-idf-and-bm-25/) and is less strict for multi-word queries [(compare)](https://leeoniya.github.io/uFuzzy/demos/compare.html?libs=js-search,ndx,Wade&search=twilight%20sag). Supports field weights. <img align="top" height="24" src="https://deno.bundlejs.com/?q=ndx,ndx/query&badge=">
+- [wade](https://github.com/kbrsh/wade) - Also similar, [(compare)](https://leeoniya.github.io/uFuzzy/demos/compare.html?libs=js-search,Wade,ndx&search=twilight%20sag) <img align="top" height="24" src="https://deno.bundlejs.com/?q=wade&badge=">
+- [libsearch](https://github.com/thesephist/libsearch) - Index-free search (slower, but easier to use) with sane ordering <img align="top" height="24" src="https://deno.bundlejs.com/?q=libsearch&badge=">
+
+One way to find sensible inexact matches is _stemming_ — converting words to a root form. _Walked_ will match _walking,_ etc. Here are a few [Porter stemmers](https://vijinimallawaarachchi.com/2017/05/09/porter-stemming-algorithm/) for English language:
+
+- [stemmer](https://github.com/words/stemmer) - <img align="top" height="24" src="https://deno.bundlejs.com/?q=stemmer&badge=">
+- [porter-stemmer](https://github.com/jedp/porter-stemmer) - <img align="top" height="24" src="https://deno.bundlejs.com/?q=porter-stemmer&badge=">
+
+For non-English words, I only have honorable mentions: [snowball-js](https://github.com/fortnightlabs/snowball-js) is 17 kB with 15 languages, [lunr-languages](https://github.com/MihaiValentin/lunr-languages) supports 30 languages but only works with [lunr,](https://github.com/olivernn/lunr.js) the most promising one is [natural](https://github.com/NaturalNode/natural/tree/master/lib/natural/stemmers) but it depends on Node.js.
+
+### Fuzzy search
+
+__Fuzzy search__ is another take on inexact matching — the words can be modified. First, we have libraries that only allow insertion: spacecat -> SPACECrAfT. Not perfect for general-purpose text search, but great for filename, command, or URL lookups.
+
+- [fuzzy](https://github.com/mattyork/fuzzy) - Index-free, can highlight matches. <img align="top" height="24" src="https://deno.bundlejs.com/?q=fuzzy&badge=">
+- [fuzzy-search](https://github.com/wouterrutgers/fuzzy-search) - With stateful index. <img align="top" height="24" src="https://deno.bundlejs.com/?q=fuzzy-search&treeshake=[{+default+}]&badge=">
+- [fzy.js](https://github.com/jhawthorn/fzy.js) - Matches one string at a time, tree-shakeable scores and match highlighting. <img align="top" height="24" src="https://deno.bundlejs.com/?q=fzy.js&badge="> total, or ~150 bytes for `hasMatch` only.
+- [fuzzysearch](https://github.com/bevacqua/fuzzysearch) -  One string at a time, does not compute score / rank. <img align="top" height="24" src="https://deno.bundlejs.com/?q=fuzzysearch&badge=">
+- [liquidmetal](https://github.com/rmm5t/liquidmetal) - Quicksilver algorithm, prioritizes matches at start of word for command abbreviations (e.g. `gp` -> `git push`). One string at a time. <img align="top" height="24" src="https://deno.bundlejs.com/?q=liquidmetal&badge=">
+- [quick-score](https://github.com/fwextensions/quick-score) - Another quicksilver-based lib, tweaked for long strings. Built-in list filtering and sorting, <img align="top" height="24" src="https://deno.bundlejs.com/?q=quick-score&badge="> or 1.2 kB for single-string scoring.
+
+Finally, one library is specifically built for spellchecking:
+
+- [fuzzyset](https://github.com/Glench/fuzzyset.js) - Find misspellings, e.g. missipissi -> Missisipi, <img align="top" height="24" src="https://deno.bundlejs.com/?q=fuzzyset&badge="> Commercial usage costs $42.
+
 
 ## Contributing
 

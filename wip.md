@@ -1,3 +1,5 @@
+https://github.com/kbrsh/moon
+
 ## Components
 
 - https://github.com/vuejs-tips/v-money
@@ -31,11 +33,6 @@
 - https://github.com/marcoroth/current.js
 - https://github.com/hustcc/size-sensor
 - https://github.com/vaneenige/uos
-- Keyboard / hotkeys
-  - https://github.com/lukeraymonddowning/whenipres
-  - https://github.com/ccampbell/mousetrap
-  - https://github.com/madrobby/keymaster
-  - https://github.com/dmauro/Keypress
 - https://github.com/natemoo-re/micromorph
 - https://github.com/ooade/react-click-away-listener
 - https://github.com/fregante/image-promise
@@ -44,9 +41,36 @@
 - Sorting
   - https://github.com/Sjeiti/TinySort
   - https://github.com/tofsjonas/sortable
-- Form validation
-  - https://github.com/sha256/Pristine
-  - https://github.com/lukeed/formee
+- [holmes](https://github.com/Haroenv/holmes) - Text search in DOM nodes <img align="top" height="24" src="https://deno.bundlejs.com/?q=holmes.js&badge=">
+
+## Keyboard and Hotkeys
+
+Keyboard controls make your app more accessible and accomodating to power users, but managing key combos can get messy, and platform differences stand in your way. 
+
+- [mousetrap](https://github.com/ccampbell/mousetrap) - Just a thin layer of listener management and key normalization, <img align="top" height="24" src="https://deno.bundlejs.com/?q=mousetrap&badge=">
+- [keymage](https://github.com/piranha/keymage) - with scoping, <img align="top" height="24" src="https://deno.bundlejs.com/?q=keymage&badge=">
+
+- [hotkeys-js](https://github.com/jaywcjlove/hotkeys-js) - more of the same, <img align="top" height="24" src="https://deno.bundlejs.com/?q=hotkeys-js&badge=">
+- [keymaster](https://github.com/madrobby/keymaster) - more of the same, <img align="top" height="24" src="https://deno.bundlejs.com/?q=keymaster&badge=">
+
+
+- [whenipress](https://github.com/lukeraymonddowning/whenipress) - Declarative key sequences with event batching, element scoping, and doubletap / press-and-hold detection <img align="top" height="24" src="https://deno.bundlejs.com/?q=whenipress&treeshake=[{+default+}]&badge=">
+- [@github/hotkey](https://github.com/github/hotkey) - Something different! Describe hotkeys in HTML using `data-hotkey` attributes and custom DOM events. <img align="top" height="24" src="https://deno.bundlejs.com/?q=@github/hotkey&treeshake=[{+install+}]&badge=">
+
+- https://github.com/ianstormtaylor/is-hotkey
+
+## Diacritics
+
+- https://github.com/andrewrk/node-diacritics
+- https://github.com/dundalek/latinize
+
+## Levenshtein distance
+
+- https://github.com/ka-weihe/fastest-levenshtein
+- https://github.com/sindresorhus/leven
+- https://github.com/hiddentao/fast-levenshtein
+- https://github.com/gustf/js-levenshtein
+- https://github.com/gf3/Levenshtein
 
 ## Persistence
 
@@ -76,6 +100,29 @@
 - https://github.com/unjs/consola
 - https://github.com/mperdeck/jsnlog.js
 - https://github.com/debug-js/debug
+- https://github.com/pimterry/loglevel
+
+## Validation
+
+- form
+  - https://github.com/sha256/Pristine
+  - https://github.com/lukeed/formee
+  - https://github.com/rickharrison/validate.js
+  - https://github.com/FrontLabsOfficial/vue-tiny-validate
+  - https://github.com/chainlist/svelte-forms
+  - https://github.com/jaywcjlove/validator.js
+  - https://github.com/tjinauyeung/svelte-forms-lib
+- data
+  - https://github.com/neuledge/computed-types
+  - https://github.com/ianstormtaylor/superstruct
+  - https://github.com/5alidz/tiny-schema-validator
+  - https://github.com/thoughtspile/banditypes
+  - https://github.com/typeofweb/schema
+  - https://github.com/antonioru/deep-waters
+  - https://github.com/imbrn/v8n
+- specific
+  - https://github.com/tarunbatra/password-validator
+  - https://github.com/ContaAzul/creditcard.js
 
 ## Misc
 
@@ -89,16 +136,12 @@
 - https://github.com/lukeed/tmp-cache
 - https://github.com/lukeed/semiver
 - https://github.com/alexreardon/tiny-invariant
-- Validation
-  - https://github.com/neuledge/computed-types
-  - https://github.com/ianstormtaylor/superstruct
-  - https://github.com/5alidz/tiny-schema-validator
+- https://github.com/GoogleChromeLabs/comlink
 - https://github.com/lipka/piecon
 - https://github.com/openexchangerates/accounting.js
 - https://github.com/openexchangerates/money.js
 - https://github.com/sindresorhus/crypto-hash
 - https://github.com/TomerAberbach/grfn
-- https://github.com/bevacqua/fuzzysearch
 - https://github.com/nemtsov/json-mask
 - https://github.com/mourner/tinyqueue
 - cookies
@@ -108,6 +151,7 @@
 - https://github.com/mgechev/tiny-compiler
 - https://github.com/komlev/tiny-use-media
 - https://github.com/komlev/tiny-use-detect-horizontal-overflow
+- https://github.com/willmcpo/body-scroll-lock
 
 ## Waitlist
 
