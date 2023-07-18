@@ -167,6 +167,7 @@ Color manipulation is rare in pure UI development, but very helpful for data vis
 - [colr](https://github.com/stayradiated/colr) - More of the same, <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/colr.svg?label=&color=grey" >
 - [polychrome](https://github.com/cdonohue/polychrome) - More of the same, <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/polychrome.svg?label=&color=grey">
 - [randomcolor](https://github.com/davidmerfield/randomColor) - Attractive random colors with configuration. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/randomcolor.svg?label=&color=grey">
+- [colorin](https://github.com/maptalks/colorin) - a simple colors interpolate lib. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/colorin.svg?label=&color=grey">
 
 ## Touch Gestures
 
