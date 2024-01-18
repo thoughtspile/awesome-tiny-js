@@ -1,4 +1,22 @@
-https://github.com/kbrsh/moon
+- https://github.com/kbrsh/moon
+- https://github.com/choojs/choo
+- https://github.com/WebReflection/lighterhtml
+- https://github.com/WebReflection/uhtml
+- https://github.com/WebReflection/udomsay
+- https://github.com/localvoid/ivi
+- https://github.com/nextapps-de/mikado/
+- https://github.com/LeaVerou/bliss
+- https://github.com/preactjs/signals
+- https://github.com/WebReflection/usignal
+- https://github.com/ianstormtaylor/superstruct - wait for bundlejs to fix tree-shakning
+
+## Validation
+
+- [banditypes](https://github.com/thoughtspile/banditypes) - Tree-shakes to ~300 bytes for a basic setup, or <img align="top" height="24" src="https://deno.bundlejs.com/?q=banditypes&badge="> full.
+- [deep-waters](https://github.com/antonioru/deep-waters) - Composable functional validators, <img align="top" height="24" src="https://deno.bundlejs.com/?q=deep-waters/compose,deep-waters/hasShape,deep-waters/arrayOf,deep-waters/isString,deep-waters/isNumber,deep-waters/isBoolean&badge="> for a basic validation set.
+- [@typeofweb/schema](https://github.com/typeofweb/schema) - <img align="top" height="24" src="https://deno.bundlejs.com/?q=@typeofweb/schema&badge=">
+- [tiny-schema-validator](https://github.com/5alidz/tiny-schema-validator) - No tree-shaking, <img align="top" height="24" src="https://deno.bundlejs.com/?q=tiny-schema-validator&treeshake=[{+createSchema,_+}]&badge=">
+- [v8n](https://github.com/imbrn/v8n) - Check properties of strings, numbers, arrays and objects with a fluent API: `v8n().string().minLength(5).first("H").last("o")`. No tree shaking, <img align="top" height="24" src="https://deno.bundlejs.com/?q=v8n&badge=">
 
 ## Components
 
@@ -76,6 +94,7 @@ Keyboard controls make your app more accessible and accomodating to power users,
 
 - https://github.com/unjs/unstorage
 - https://github.com/willgm/web-crypto-storage
+- https://sifrr.github.io/sifrr/#/./packages/browser/sifrr-storage/
 
 ## Generic Utilities
 
@@ -112,14 +131,6 @@ Keyboard controls make your app more accessible and accomodating to power users,
   - https://github.com/chainlist/svelte-forms
   - https://github.com/jaywcjlove/validator.js
   - https://github.com/tjinauyeung/svelte-forms-lib
-- data
-  - https://github.com/neuledge/computed-types
-  - https://github.com/ianstormtaylor/superstruct
-  - https://github.com/5alidz/tiny-schema-validator
-  - https://github.com/thoughtspile/banditypes
-  - https://github.com/typeofweb/schema
-  - https://github.com/antonioru/deep-waters
-  - https://github.com/imbrn/v8n
 - specific
   - https://github.com/tarunbatra/password-validator
   - https://github.com/ContaAzul/creditcard.js
