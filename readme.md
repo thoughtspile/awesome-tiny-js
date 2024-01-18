@@ -35,18 +35,23 @@ Tiny front-end libraries to put your bundle on a diet. Rules:
 
 UI frameworks (libraries?) provide declarative templates, event bindings, and observable state to update the view. I've been generous and expanded the size limit for this category to 4.5 kB (if you're boring, count them as 2 libraries), but also increased the star limit to 2K. 
 
-- [preact](https://github.com/preactjs/preact) - React-like API (pre-hooks). Cool ecosystem of similarly tiny tools and components. Highly recommended. <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/preact.svg?label=&color=grey">
+- [preact](https://github.com/preactjs/preact) - React-like API (pre-hooks). Cool ecosystem of similarly tiny tools and components. Highly recommended. <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=preact&treeshake=[{+h,render,Component+}]">
 
-The following libraries are small and cool, but note they're about [500x less popular than preact.](https://npmtrends.com/preact-vs-fre-vs-hyperapp-vs-million-vs-redom) Kudos for deconstrucing the very essence of a "framework":
+The following libraries are small and cool, but note they're about [500x less popular than preact.](https://npmtrends.com/preact-vs-hyperapp-vs-redom) Kudos for deconstrucing the very essence of a "framework":
 
-- [million](https://github.com/aidenybai/million) - Alternate runtime for React components, <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/million.svg?label=&color=grey">
-- [fre](https://github.com/frejs/fre) - React-like library with hooks and concurrency, <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/fre.svg?label=&color=grey"> or ~2 kB with tree-shaking.
-- [hyperapp](https://github.com/jorgebucaran/hyperapp) - Declarative UI with pure JS syntax and immutable state, <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/hyperapp.svg?label=&color=grey">
-- [redom](https://github.com/redom/redom) - Hyperapp-style templates with _imperative_ event listeners and updates, <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/redom.svg?label=&color=grey">
+- [hyperapp](https://github.com/jorgebucaran/hyperapp) - vDOM framework with pure JS syntax and immutable state, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=https://unpkg.com/hyperapp&treeshake=[*]">
+- [redom](https://github.com/redom/redom) - Hyperapp-style templates with _imperative_ event listeners and updates, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=redom&treeshake=[*]">
+
+Now, for the [openly experimental](https://npmtrends.com/@arrow-js/core-vs-fre-vs-hyperapp-vs-redom-vs-superfine-vs-vanjs-core) UI libraries:
+
+- [fre](https://github.com/frejs/fre) - React-like library with hooks and concurrency, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=fre&treeshake=[{+render,useState+}]">
+- [van](https://github.com/vanjs-org/van) — vDOM-based framework optimized for no-build setups, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=vanjs-core&treeshake=[{+default+as+van+}]">
+- [superfine](https://github.com/jorgebucaran/superfine) — Hyperapp with state & effect hooks removed, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=superfine&treeshake=[{+h,text,patch+}]">
+- [arrowjs](https://github.com/justin-schroeder/arrow-js) — Tagged templates + reactive data, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=@arrow-js/core&treeshake=[*]">
 
 And if being declarative is not your thing:
 
-- [umbrella](https://github.com/franciscop/umbrella) - jQuery-style DOM manipulation library, <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/umbrellajs.svg?label=&color=grey">
+- [umbrella](https://github.com/franciscop/umbrella) - jQuery-style DOM manipulation library, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=umbrellajs&treeshake=[*]">
 
 ## Event Emitters
 
@@ -75,7 +80,6 @@ State managers combine observable state with actions and framework bindings, int
 - [zustand](https://github.com/pmndrs/zustand) - Simple stores with pleasant actions and selectors. React <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/zustand.svg?label=&color=grey"> or vanilla <img align="top" height="24" src="https://deno.bundlejs.com/?q=zustand/vanilla&badge=">
 - [nanostores](https://github.com/nanostores/nanostores) - Modular store with good tree-shaking support, <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/zustand.svg?label=&color=grey">. Lots of framework connectors (e.g. React <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/@nanostores/react.svg?label=&color=grey">).
 - [exome](https://github.com/marcisbee/exome) - Atomic stores with lots of framework connectors, <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/exome.svg?label=&color=grey">
-- [reatom](https://github.com/artalar/reatom) - Atomic stores for React / svelte / vanilla, <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/@reatom/core.svg?label=&color=grey">
 - [storeon](https://github.com/storeon/storeon) - Minimal redux-styled store with lots of framework connectors, <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/storeon.svg?label=&color=grey">
 - [unistore](https://github.com/developit/unistore) - Centralized store with actions for React / preact, <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/unistore.svg?label=&color=grey">
 - [teaful](https://github.com/teafuljs/teaful) - Store with useState-like API for React / preact, <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/teaful.svg?label=&color=grey">
