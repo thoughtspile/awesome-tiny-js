@@ -26,6 +26,7 @@ Tiny front-end libraries to put your bundle on a diet. Rules:
 - [I18N](#i18n)
 - [Dates and Time](#dates-and-time)
 - [Generic Utilities](#generic-utilities)
+- [Validation](#validation)
 - [Unique ID Generation](#unique-id-generation)
 - [Colors](#colors)
 - [Touch Gestures](#touch-gestures)
@@ -152,6 +153,17 @@ Honorable mention: [underscore,](https://github.com/jashkenas/underscore) contai
 Note: lodash itself is not tree-shakable, but has made many attempts at modulaity with `lodash.method` packages, imports from `lodash/method`, and `lodash-es`, none of which work well in practice.
 
 Also note that much of the original lodash functionality comes built-in with modern ES. Prefer native versions over libraries as your browser target allows.
+
+## Validation
+
+To check if an object matches an expected schema, you'd often use zod, yup, joi or ajv. But 90% of the time you can get what you need in under 2 kB. _Note:_ I compare a base validation subset (core + object / array + string / number / boolean) under tree-shaking to avoid punishing libs that have more features.
+
+- [v8n](https://github.com/imbrn/v8n) - zod-style API with fine-grained checks: `v8n().string().minLength(5).first("H").last("o")`. No tree shaking, <img align="top" height="24" src="https://deno.bundlejs.com/?q=v8n&badge=">
+- [banditypes](https://github.com/thoughtspile/banditypes) - The smallest validation library: <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=banditypes&treeshake=[{++object,number,string,array,optional,boolean}]">
+- [superstruct](https://github.com/ianstormtaylor/superstruct) - The most popular modular validation library with good tree-shaking, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=superstruct&treeshake=[{+assert,object,array,number,string,boolean+}]">
+- [valibot](https://github.com/fabian-hiller/valibot) - Another modular validation library, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=valibot&treeshake=[{+object,array,parse,string,number,boolean+}]">
+- [deep-waters](https://github.com/antonioru/deep-waters) - Composable functional validators, <img align="top" height="24" src="https://deno.bundlejs.com/?q=deep-waters/compose,deep-waters/hasShape,deep-waters/arrayOf,deep-waters/isString,deep-waters/isNumber,deep-waters/isBoolean&badge=">.
+- [tiny-schema-validator](https://github.com/5alidz/tiny-schema-validator) - No tree-shaking, <img align="top" height="24" src="https://deno.bundlejs.com/?q=tiny-schema-validator&treeshake=[{+createSchema,_+}]&badge=">
 
 ## Unique ID Generation
 
