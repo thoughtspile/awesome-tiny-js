@@ -1,3 +1,5 @@
+## UI frameworks
+
 - https://github.com/kbrsh/moon
 - https://github.com/choojs/choo
 - https://github.com/WebReflection/lighterhtml
@@ -6,6 +8,9 @@
 - https://github.com/localvoid/ivi
 - https://github.com/nextapps-de/mikado/
 - https://github.com/LeaVerou/bliss
+
+## Signals
+
 - https://github.com/preactjs/signals
 - https://github.com/WebReflection/usignal
 
@@ -155,6 +160,3 @@ Keyboard controls make your app more accessible and accomodating to power users,
 - https://github.com/komlev/tiny-use-detect-horizontal-overflow
 - https://github.com/willmcpo/body-scroll-lock
 
-## Waitlist
-
-- Date / time: https://github.com/masbagal/tempe

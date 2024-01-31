@@ -36,23 +36,23 @@ Tiny front-end libraries to put your bundle on a diet. Rules:
 
 UI frameworks (libraries?) provide declarative templates, event bindings, and observable state to update the view. I've been generous and expanded the size limit for this category to 4.5 kB (if you're boring, count them as 2 libraries), but also increased the star limit to 2K. 
 
-- [preact](https://github.com/preactjs/preact) - React-like API (pre-hooks). Cool ecosystem of similarly tiny tools and components. Highly recommended. <img align="top" height="24" src="./img/preact.svg">
+- [preact](https://github.com/preactjs/preact) - React-like API (pre-hooks). Cool ecosystem of similarly tiny tools and components. Highly recommended. <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=preact&treeshake=[{+h,render,Component+}]">
 
 The following libraries are small and cool, but note they're about [500x less popular than preact.](https://npmtrends.com/preact-vs-hyperapp-vs-redom) Kudos for deconstrucing the very essence of a "framework":
 
-- [hyperapp](https://github.com/jorgebucaran/hyperapp) - vDOM framework with pure JS syntax and immutable state, <img align="top" height="24" src="./img/hyperapp.svg">
-- [redom](https://github.com/redom/redom) - Hyperapp-style templates with _imperative_ event listeners and updates, <img align="top" height="24" src="./img/redom.svg">
+- [hyperapp](https://github.com/jorgebucaran/hyperapp) - vDOM framework with pure JS syntax and immutable state, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=hyperapp&treeshake=[*]">
+- [redom](https://github.com/redom/redom) - Hyperapp-style templates with _imperative_ event listeners and updates, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=redom&treeshake=[*]">
 
 Now, for the [openly experimental](https://npmtrends.com/@arrow-js/core-vs-fre-vs-hyperapp-vs-redom-vs-superfine-vs-vanjs-core) UI libraries:
 
-- [fre](https://github.com/frejs/fre) - React-like library with hooks and concurrency, <img align="top" height="24" src="./img/fre.svg">
-- [van](https://github.com/vanjs-org/van) - vDOM-based framework optimized for no-build setups, <img align="top" height="24" src="./img/vanjscore.svg">
-- [superfine](https://github.com/jorgebucaran/superfine) - Hyperapp with state & effect hooks removed, <img align="top" height="24" src="./img/superfine.svg">
-- [arrowjs](https://github.com/justin-schroeder/arrow-js) - Tagged templates + reactive data, <img align="top" height="24" src="./img/arrowjscore.svg">
+- [fre](https://github.com/frejs/fre) - React-like library with hooks and concurrency, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=fre&treeshake=[{+render,useState+}]">
+- [van](https://github.com/vanjs-org/van) - vDOM-based framework optimized for no-build setups, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=vanjs-core&treeshake=[{+default+as+van+}]">
+- [superfine](https://github.com/jorgebucaran/superfine) - Hyperapp with state & effect hooks removed, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=superfine&treeshake=[{+h,text,patch+}]">
+- [arrowjs](https://github.com/justin-schroeder/arrow-js) - Tagged templates + reactive data, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=@arrow-js/core&treeshake=[*]">
 
 And if being declarative is not your thing:
 
-- [umbrella](https://github.com/franciscop/umbrella) - jQuery-style DOM manipulation library, <img align="top" height="24" src="./img/umbrellajs.svg">
+- [umbrella](https://github.com/franciscop/umbrella) - jQuery-style DOM manipulation library, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=umbrellajs&treeshake=[*]">
 
 ## Event Emitters
 
@@ -78,7 +78,7 @@ Honorable mention: [oby](https://github.com/vobyjs/oby) _could_ make it _if_ it 
 
 State managers combine observable state with actions and framework bindings, intended for app-wide state.
 
-- [zustand](https://github.com/pmndrs/zustand) - Simple stores with pleasant actions and selectors. React <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/zustand.svg?label=&color=grey"> or vanilla <img align="top" height="24" src="./img/zustandvanilla.svg">
+- [zustand](https://github.com/pmndrs/zustand) - Simple stores with pleasant actions and selectors. React <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/zustand.svg?label=&color=grey"> or vanilla <img align="top" height="24" src="https://deno.bundlejs.com/?q=zustand/vanilla&badge=">
 - [nanostores](https://github.com/nanostores/nanostores) - Modular store with good tree-shaking support, <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/zustand.svg?label=&color=grey">. Lots of framework connectors (e.g. React <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/@nanostores/react.svg?label=&color=grey">).
 - [exome](https://github.com/marcisbee/exome) - Atomic stores with lots of framework connectors, <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/exome.svg?label=&color=grey">
 - [storeon](https://github.com/storeon/storeon) - Minimal redux-styled store with lots of framework connectors, <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/storeon.svg?label=&color=grey">
@@ -158,18 +158,18 @@ Also note that much of the original lodash functionality comes built-in with mod
 
 To check if an object matches an expected schema, you'd often use zod, yup, joi or ajv. But 90% of the time you can get what you need in under 2 kB. _Note:_ I compare a base validation subset (core + object / array + string / number / boolean) under tree-shaking to avoid punishing libs that have more features.
 
-- [v8n](https://github.com/imbrn/v8n) - zod-style API with fine-grained checks: `v8n().string().minLength(5).first("H").last("o")`. No tree shaking, <img align="top" height="24" src="./img/vn.svg">
-- [banditypes](https://github.com/thoughtspile/banditypes) - The smallest validation library: <img align="top" height="24" src="./img/banditypes.svg">
-- [superstruct](https://github.com/ianstormtaylor/superstruct) - The most popular modular validation library with good tree-shaking, <img align="top" height="24" src="./img/superstruct.svg">
-- [valibot](https://github.com/fabian-hiller/valibot) - Another modular validation library, <img align="top" height="24" src="./img/valibot.svg">
-- [deep-waters](https://github.com/antonioru/deep-waters) - Composable functional validators, <img align="top" height="24" src="./img/deepwaterscomposedeepwatershasShapedeepwatersarrayOfdeepwatersisStringdeepwatersisNumberdeepwatersisBoolean.svg">.
+- [v8n](https://github.com/imbrn/v8n) - zod-style API with fine-grained checks: `v8n().string().minLength(5).first("H").last("o")`. No tree shaking, <img align="top" height="24" src="https://deno.bundlejs.com/?q=v8n&badge=">
+- [banditypes](https://github.com/thoughtspile/banditypes) - The smallest validation library: <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=banditypes&treeshake=[{++object,number,string,array,optional,boolean}]">
+- [superstruct](https://github.com/ianstormtaylor/superstruct) - The most popular modular validation library with good tree-shaking, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=superstruct&treeshake=[{+assert,object,array,number,string,boolean+}]">
+- [valibot](https://github.com/fabian-hiller/valibot) - Another modular validation library, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=valibot&treeshake=[{+object,array,parse,string,number,boolean+}]">
+- [deep-waters](https://github.com/antonioru/deep-waters) - Composable functional validators, <img align="top" height="24" src="https://deno.bundlejs.com/?q=deep-waters/compose,deep-waters/hasShape,deep-waters/arrayOf,deep-waters/isString,deep-waters/isNumber,deep-waters/isBoolean&badge=">.
 
 ## Unique ID Generation
 
 Unique ID generation does not take a lot of code, but it's not someting I'd want to write myself. Limit is 500 bytes. Also note that the [native `crypto.randomUUID`](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/randomUUID) has [OK support.](https://caniuse.com/mdn-api_crypto_randomuuid)
 
 - [@lukeed/uuid](https://github.com/lukeed/uuid) - Real UUIDs, <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/@lukeed/uuid.svg?label=&color=grey">
-- [nanoid](https://github.com/ai/nanoid) - Random IDs with larger alphabet, <img align="top" height="24" src="./img/nanoid.svg">
+- [nanoid](https://github.com/ai/nanoid) - Random IDs with larger alphabet, <img align="top" height="24" src="https://deno.bundlejs.com/?q=nanoid&badge=">
 - [uid](https://github.com/lukeed/uid) - More of the same, <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/uid.svg?label=&color=grey">
 - [hexoid](https://github.com/lukeed/hexoid) - Hexadecimal IDs, <img align="top" height="24" src="https://img.shields.io/bundlephobia/minzip/hexoid.svg?label=&color=grey">
 
@@ -186,13 +186,13 @@ Color manipulation is rare in pure UI development, but very helpful for data vis
 
 Touch gestures like swipe, drag, pinch or doubletap are a staple of mobile UX, but recognizing a series of touchmove / pointer events as a gesture is tricky, and testing is painful. Here are two libraries that do the heavy lifting for you:
 
-- [alloyfinger](https://github.com/AlloyTeam/AlloyFinger) - Pan, swipe, tap, doubletap, longpress, _and_ pinch / rotate. My personal favorite. <img align="top" height="24" src="./img/alloyfinger.svg">.
-- [tinygesture](https://github.com/sciactive/tinygesture) - Configurable pan, swipe, tap, doubletap, longpress. <img align="top" height="24" src="./img/tinygesture.svg">.
+- [alloyfinger](https://github.com/AlloyTeam/AlloyFinger) - Pan, swipe, tap, doubletap, longpress, _and_ pinch / rotate. My personal favorite. <img align="top" height="24" src="https://deno.bundlejs.com/?q=alloyfinger&badge=">.
+- [tinygesture](https://github.com/sciactive/tinygesture) - Configurable pan, swipe, tap, doubletap, longpress. <img align="top" height="24" src="https://deno.bundlejs.com/?q=tinygesture&badge=">.
 
 Even if you want to detect gestures yourself, juggling mouse, touch and pointer events is hard enough, and browser inconsistencies don't help. Here are two more libraries to assist with that:
 
-- [pointer-tracker](https://github.com/GoogleChromeLabs/pointer-tracker) - Unified interface for mouse, touch and pointer events, <img align="top" height="24" src="./img/pointertracker.svg">
-- [detect-it](https://github.com/rafgraph/detect-it) - Detect present and primary input method (touch / mouse) and supported events, <img align="top" height="24" src="./img/detectit.svg">
+- [pointer-tracker](https://github.com/GoogleChromeLabs/pointer-tracker) - Unified interface for mouse, touch and pointer events, <img align="top" height="24" src="https://deno.bundlejs.com/?q=pointer-tracker&badge=">
+- [detect-it](https://github.com/rafgraph/detect-it) - Detect present and primary input method (touch / mouse) and supported events, <img align="top" height="24" src="https://deno.bundlejs.com/?q=detect-it&badge=">
 
 Honorable mentions: [any-touch](https://github.com/any86/any-touch) attempts a modular approach to gesture detection, but the core is around 2 kB without any gesture recognizers. [rc-gesture,](https://github.com/react-component/gesture) used in ant design system, could be the only react component on the list, but babel-runtime / corejs polyfills hard-wired into the build push the ~2.5 kB size to over 10 kB.
 
@@ -200,15 +200,15 @@ Honorable mentions: [any-touch](https://github.com/any86/any-touch) attempts a m
 
 Text search is important for client-side filtering and autosuggests. Naive `option.includes(search)` has no sensible order on the results, and ignoring word boundaries gives unexpected matches like _spa -> newSPAper._ First, here are some libraries that prioritize word matches:
 
-- [js-search](https://github.com/bvaughn/js-search) - Feature-rich and customizable: multi-field indices, stop words, custom stemmers and tokenizers. <img align="top" height="24" src="./img/jssearch.svg">
-- [ndx](https://github.com/localvoid/ndx) - Similar to js-search, differs in [ranking](https://kmwllc.com/index.php/2020/03/20/understanding-tf-idf-and-bm-25/) and is less strict for multi-word queries [(compare)](https://leeoniya.github.io/uFuzzy/demos/compare.html?libs=js-search,ndx,Wade&search=twilight%20sag). Supports field weights. <img align="top" height="24" src="./img/ndxndxquery.svg">
-- [wade](https://github.com/kbrsh/wade) - Also similar, [(compare)](https://leeoniya.github.io/uFuzzy/demos/compare.html?libs=js-search,Wade,ndx&search=twilight%20sag) <img align="top" height="24" src="./img/wade.svg">
-- [libsearch](https://github.com/thesephist/libsearch) - Index-free search (slower, but easier to use) with sane ordering <img align="top" height="24" src="./img/libsearch.svg">
+- [js-search](https://github.com/bvaughn/js-search) - Feature-rich and customizable: multi-field indices, stop words, custom stemmers and tokenizers. <img align="top" height="24" src="https://deno.bundlejs.com/?q=js-search&treeshake=[{+Search+}]&badge=">
+- [ndx](https://github.com/localvoid/ndx) - Similar to js-search, differs in [ranking](https://kmwllc.com/index.php/2020/03/20/understanding-tf-idf-and-bm-25/) and is less strict for multi-word queries [(compare)](https://leeoniya.github.io/uFuzzy/demos/compare.html?libs=js-search,ndx,Wade&search=twilight%20sag). Supports field weights. <img align="top" height="24" src="https://deno.bundlejs.com/?q=ndx,ndx/query&badge=">
+- [wade](https://github.com/kbrsh/wade) - Also similar, [(compare)](https://leeoniya.github.io/uFuzzy/demos/compare.html?libs=js-search,Wade,ndx&search=twilight%20sag) <img align="top" height="24" src="https://deno.bundlejs.com/?q=wade&badge=">
+- [libsearch](https://github.com/thesephist/libsearch) - Index-free search (slower, but easier to use) with sane ordering <img align="top" height="24" src="https://deno.bundlejs.com/?q=libsearch&badge=">
 
 One way to find sensible inexact matches is _stemming_ — converting words to a root form. _Walked_ will match _walking,_ etc. Here are a few [Porter stemmers](https://vijinimallawaarachchi.com/2017/05/09/porter-stemming-algorithm/) for English language:
 
-- [stemmer](https://github.com/words/stemmer) - <img align="top" height="24" src="./img/stemmer.svg">
-- [porter-stemmer](https://github.com/jedp/porter-stemmer) - <img align="top" height="24" src="./img/porterstemmer.svg">
+- [stemmer](https://github.com/words/stemmer) - <img align="top" height="24" src="https://deno.bundlejs.com/?q=stemmer&badge=">
+- [porter-stemmer](https://github.com/jedp/porter-stemmer) - <img align="top" height="24" src="https://deno.bundlejs.com/?q=porter-stemmer&badge=">
 
 For non-English words, I only have honorable mentions: [snowball-js](https://github.com/fortnightlabs/snowball-js) is 17 kB with 15 languages, [lunr-languages](https://github.com/MihaiValentin/lunr-languages) supports 30 languages but only works with [lunr,](https://github.com/olivernn/lunr.js) the most promising one is [natural](https://github.com/NaturalNode/natural/tree/master/lib/natural/stemmers) but it depends on Node.js.
 
@@ -216,16 +216,16 @@ For non-English words, I only have honorable mentions: [snowball-js](https://git
 
 __Fuzzy search__ is another take on inexact matching — the words can be modified. First, we have libraries that only allow insertion: spacecat -> SPACECrAfT. Not perfect for general-purpose text search, but great for filename, command, or URL lookups.
 
-- [fuzzy](https://github.com/mattyork/fuzzy) - Index-free, can highlight matches. <img align="top" height="24" src="./img/fuzzy.svg">
-- [fuzzy-search](https://github.com/wouterrutgers/fuzzy-search) - With stateful index. <img align="top" height="24" src="./img/fuzzysearch.svg">
-- [fzy.js](https://github.com/jhawthorn/fzy.js) - Matches one string at a time, tree-shakeable scores and match highlighting. <img align="top" height="24" src="./img/fzyjs.svg"> total, or ~150 bytes for `hasMatch` only.
-- [fuzzysearch](https://github.com/bevacqua/fuzzysearch) -  One string at a time, does not compute score / rank. <img align="top" height="24" src="./img/fuzzysearch.svg">
-- [liquidmetal](https://github.com/rmm5t/liquidmetal) - Quicksilver algorithm, prioritizes matches at start of word for command abbreviations (e.g. `gp` -> `git push`). One string at a time. <img align="top" height="24" src="./img/liquidmetal.svg">
-- [quick-score](https://github.com/fwextensions/quick-score) - Another quicksilver-based lib, tweaked for long strings. Built-in list filtering and sorting, <img align="top" height="24" src="./img/quickscore.svg"> or 1.2 kB for single-string scoring.
+- [fuzzy](https://github.com/mattyork/fuzzy) - Index-free, can highlight matches. <img align="top" height="24" src="https://deno.bundlejs.com/?q=fuzzy&badge=">
+- [fuzzy-search](https://github.com/wouterrutgers/fuzzy-search) - With stateful index. <img align="top" height="24" src="https://deno.bundlejs.com/?q=fuzzy-search&treeshake=[{+default+}]&badge=">
+- [fzy.js](https://github.com/jhawthorn/fzy.js) - Matches one string at a time, tree-shakeable scores and match highlighting. <img align="top" height="24" src="https://deno.bundlejs.com/?q=fzy.js&badge="> total, or ~150 bytes for `hasMatch` only.
+- [fuzzysearch](https://github.com/bevacqua/fuzzysearch) -  One string at a time, does not compute score / rank. <img align="top" height="24" src="https://deno.bundlejs.com/?q=fuzzysearch&badge=">
+- [liquidmetal](https://github.com/rmm5t/liquidmetal) - Quicksilver algorithm, prioritizes matches at start of word for command abbreviations (e.g. `gp` -> `git push`). One string at a time. <img align="top" height="24" src="https://deno.bundlejs.com/?q=liquidmetal&badge=">
+- [quick-score](https://github.com/fwextensions/quick-score) - Another quicksilver-based lib, tweaked for long strings. Built-in list filtering and sorting, <img align="top" height="24" src="https://deno.bundlejs.com/?q=quick-score&badge="> or 1.2 kB for single-string scoring.
 
 Finally, one library is specifically built for spellchecking:
 
-- [fuzzyset](https://github.com/Glench/fuzzyset.js) - Find misspellings, e.g. missipissi -> Missisipi, <img align="top" height="24" src="./img/fuzzyset.svg"> Commercial usage costs $42.
+- [fuzzyset](https://github.com/Glench/fuzzyset.js) - Find misspellings, e.g. missipissi -> Missisipi, <img align="top" height="24" src="https://deno.bundlejs.com/?q=fuzzyset&badge="> Commercial usage costs $42.
 
 
 ## Contributing
