@@ -46,7 +46,7 @@ The following libraries are small and cool, but note they're about [500x less po
 Now, for the [openly experimental](https://npmtrends.com/@arrow-js/core-vs-fre-vs-hyperapp-vs-redom-vs-superfine-vs-vanjs-core) UI libraries:
 
 - [fre](https://github.com/frejs/fre) - React-like library with hooks and concurrency, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=fre&treeshake=[{+render,useState+}]">
-- [van](https://github.com/vanjs-org/van) - vDOM-based framework optimized for no-build setups, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=vanjs-core&treeshake=[{+default+as+van+}]">
+- [van](https://github.com/vanjs-org/van) - vDOM-based framework optimized for no-build setups, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=vanjs-core&treeshake=[{+default+}]">
 - [superfine](https://github.com/jorgebucaran/superfine) - Hyperapp with state & effect hooks removed, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=superfine&treeshake=[{+h,text,patch+}]">
 - [arrowjs](https://github.com/justin-schroeder/arrow-js) - Tagged templates + reactive data, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=@arrow-js/core&treeshake=[*]">
 
@@ -60,7 +60,7 @@ Event emitter pattern is fairly easy to implement yourself, but why bother when 
 
 - [mitt](https://github.com/developit/mitt) - Plain event emitter that I use on most projects, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=mitt">
 - [nanoevents](https://github.com/ai/nanoevents) - Nicer unsubscribe API, but no `*` event, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=nanoevents&treeshake=[*]">
-- [onfire.js](https://github.com/hustcc/onfire.js) - Also has `.once` method, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=onfire.js&treeshake=[*]">
+- [onfire.js](https://github.com/hustcc/onfire.js) - Also has `.once` method, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=onfire.js&treeshake=[{default}]">
 
 ## Reactive Programming
 
@@ -129,7 +129,7 @@ Date and time manipulation in pure JS is verbose. Luckily, two of the top date l
 And some more packages that only do formatting:
 
 - [tinytime](https://github.com/aweary/tinytime) - Simple date / time formatter: `{h}:{mm} -> 9:33`, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=tinytime&treeshake=[*]">
-- [tinydate](https://github.com/lukeed/tinydate) - Date / time formatter, only supports padded numeric output (`September -> 09`), <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=tinydate&treeshake=[*]">
+- [tinydate](https://github.com/lukeed/tinydate) - Date / time formatter, only supports padded numeric output (`September -> 09`), <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=tinydate&treeshake=[{default}]">
 - [time-stamp](https://github.com/jonschlinkert/time-stamp) - More of the same, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=time-stamp&treeshake=[*]">
 - [ms](https://github.com/vercel/ms) - Parse & format ms durations, e.g. `"1m" <-> 60000`, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=ms&treeshake=[*]">
 - [timeago.js](https://github.com/hustcc/timeago.js) - Format dates into stuff like _X minutes ago_ or _in X hours,_ <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=timeago.js&treeshake=[*]">

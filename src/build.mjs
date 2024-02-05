@@ -16,10 +16,17 @@ const srcs = content.match(/src="https:\/\/deno.bundlejs.com[^"]+"/g).map(s => s
 
 for (const src of srcs) {
   const imports = new URL(src).searchParams.get('q').split(',');
-  const libs = imports.map(e => e.split('/').slice(0, e.startsWith('@') ? 2 : 1).join('/'));
+  const libs = [...new Set(imports.map(e => e.split('/').slice(0, e.startsWith('@') ? 2 : 1).join('/')))];
   const memebers = decodeURIComponent(new URL(src).searchParams.get('treeshake') || '').replace(/[\[\]]/g, '');
   await execa('npm', ['i', ...libs], { cwd: '.tmp' });
+  
+  const pkg = JSON.parse(await readFile(`./.tmp/node_modules/${libs[0]}/package.json`));
+  const isCjs = !pkg.module && pkg.type !== 'module' && !pkg.exports;
+
   const code = imports.map((l, i) => {
+    if (isCjs) {
+      return `export var r${i} = require('${l}')`;
+    }
     return memebers
       ? `export ${memebers} from '${l}'`
       : `export * from '${l}';export {default as d${i}} from '${l}';`;
@@ -34,6 +41,12 @@ for (const src of srcs) {
 		write: false,
     format: 'esm',
 		target: 'es2020',
+    external: ['react', 'react-dom', 'use-sync-external-store'],
+    legalComments: 'none',
+    define: {
+      'import.meta.env': '{ "MODE": "production" }',
+      'import.meta.env.MODE': '"production"',
+    },
     alias: {
       unfetch: path.resolve(".tmp/node_modules/unfetch/dist/unfetch.mjs"),
     }
@@ -43,15 +56,17 @@ for (const src of srcs) {
   }
   const gzipSize = gzipSync(bundle).byteLength;
   
-  const badgePath = `img/${libs.join('-').replace(/[^a-z-]/ig, '')}.svg`;
+  const normalName = libs.join('-').replace(/[^a-z-]/ig, '');
+  const badgePath = `img/${normalName}.svg`;
   const badgeSvg = makeBadge({
     message: prettyBytes(gzipSize),
     color: 'gray',
   });
   await writeFile(`../${badgePath}`, badgeSvg);
+  await writeFile(`.tmp/${normalName}.bundle.js`, bundle);
   content = content.replace(src, `./${badgePath}`);
 
-  console.log(`${libs.join(',')}\t${prettyBytes(gzipSize)}`);
+  console.log(`${isCjs ? 'cjs:' : ''}${libs.join(',')}\t${prettyBytes(gzipSize)}`);
 }
 
 await writeFile('../readme.md', content);
