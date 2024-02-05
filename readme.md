@@ -77,18 +77,18 @@ Honorable mention: [oby](https://github.com/vobyjs/oby) _could_ make it _if_ it 
 
 State managers combine observable state with actions and framework bindings, intended for app-wide state.
 
-- [zustand](https://github.com/pmndrs/zustand) - Simple stores with pleasant actions and selectors. React <img align="top" height="24" src="./img/zustand.svg">
-- [nanostores](https://github.com/nanostores/nanostores) - Modular store with good tree-shaking support, <img align="top" height="24" src="./img/nanostores.svg">).
-- [exome](https://github.com/marcisbee/exome) - Atomic stores with lots of framework connectors, <img align="top" height="24" src="./img/exome.svg"> + e.g. React <img align="top" height="24" src="./img/exome.svg">
-- [storeon](https://github.com/storeon/storeon) - Minimal redux-styled store with lots of framework connectors, <img align="top" height="24" src="./img/storeon.svg">
-- [unistore](https://github.com/developit/unistore) - Centralized store with actions for React / preact, <img align="top" height="24" src="./img/unistore.svg">
-- [teaful](https://github.com/teafuljs/teaful) - Store with useState-like API for React / preact, <img align="top" height="24" src="./img/teaful.svg">
+- [zustand](https://github.com/pmndrs/zustand) - Simple stores with pleasant actions and selectors. Vanilla <img align="top" height="24" src="./img/zustandvanilla.svg">, React <img align="top" height="24" src="./img/zustand.svg">
+- [nanostores](https://github.com/nanostores/nanostores) - Modular store with good tree-shaking support, <img align="top" height="24" src="./img/nanostores.svg"> vanilla, + React <img align="top" height="24" src="./img/nanostoresreact.svg"> extra. Supports all the top frameworks.
+- [exome](https://github.com/marcisbee/exome) - Atomic stores with lots of framework connectors, <img align="top" height="24" src="./img/exome.svg"> + React <img align="top" height="24" src="./img/exomereact.svg"> extra. Supports all the top frameworks.
+- [storeon](https://github.com/storeon/storeon) - Minimal redux-styled store with lots of framework connectors, <img align="top" height="24" src="./img/storeon.svg">. React extra <img align="top" height="24" src="./img/storeonreact.svg"> + Vue, Svelte, Angular.
+- [unistore](https://github.com/developit/unistore) - Centralized store with actions, <img align="top" height="24" src="./img/unistore.svg"> + React <img align="top" height="24" src="./img/unistorereact.svg">
+- [teaful](https://github.com/teafuljs/teaful) - Store with useState-like API, <img align="top" height="24" src="./img/teaful.svg">, including React / preact connector.
 
 ## Routers and URL Utils
 
 Do stuff on URL / history changes, with path matching and parsing:
 
-- [wouter](https://github.com/molefrog/wouter) - Declarative router for React / preact, <img align="top" height="24" src="./img/wouter.svg">, also available as a standalone hook: <img align="top" height="24" src="./img/wouter.svg">
+- [wouter](https://github.com/molefrog/wouter) - Declarative router for React / preact, <img align="top" height="24" src="./img/wouter.svg">, also available as a standalone hook: <img align="top" height="24" src="./img/wouteruse-browser-location.svg">
 - [@nanostores/router](https://github.com/nanostores/router) - Routes as a nanostores store (framework-agnostic), <img align="top" height="24" src="./img/nanostoresrouter.svg">
 - [navaid](https://github.com/lukeed/navaid) - History-based observable router, <img align="top" height="24" src="./img/navaid.svg">
 
@@ -114,7 +114,7 @@ If for some reason you still need a fetch polyfill, try this one:
 
 A map of strings might seem enough to translate an app, but these tools also handle interpolation and some extra goodies:
 
-- [@nanostores/i18n](https://github.com/nanostores/i18n) - Detect locale, load dictionaries, format dates / numbers, <img align="top" height="24" src="./img/nanostoresin.svg">
+- [@nanostores/i18n](https://github.com/nanostores/i18n) - Detect locale, load dictionaries, format dates / numbers, <img align="top" height="24" src="./img/nanostoresin.svg"> including nanostores.
 - [eo-locale](https://github.com/ibitcy/eo-locale) - Interpolation and dates / numbers, <img align="top" height="24" src="./img/eo-localecore.svg">, or <img align="top" height="24" src="./img/eo-localereact.svg"> with react bindings.
 - [rosetta](https://github.com/lukeed/rosetta) - Bare-bones template strings (`{{hello}}, {{username}}`) and custom functions for everyting else, <img align="top" height="24" src="./img/rosetta.svg">
 - [lingui](https://github.com/lingui/js-lingui) - Small core with template strings, <img align="top" height="24" src="./img/linguicore.svg">
@@ -124,7 +124,7 @@ A map of strings might seem enough to translate an app, but these tools also han
 Date and time manipulation in pure JS is verbose. Luckily, two of the top date libraries have sensible size:
 
 - [date-fns](https://github.com/date-fns/date-fns/) - Not tiny as a whole, but [most functions](https://bundlephobia.com/package/date-fns) are under 1 kB each (format and parse are quite heavy).
-- [dayjs](https://github.com/iamkun/dayjs) - _Almost_ moment.js-compatible API, covers most use cases, <img align="top" height="24" src="./img/dayjs.svg">
+- [dayjs](https://github.com/iamkun/dayjs) - _Almost_ moment.js-compatible API, covers most use cases, <img align="top" height="24" src="./img/dayjsesm.svg">
 
 And some more packages that only do formatting:
 
@@ -160,7 +160,7 @@ To check if an object matches an expected schema, you'd often use zod, yup, joi 
 - [banditypes](https://github.com/thoughtspile/banditypes) - The smallest validation library: <img align="top" height="24" src="./img/banditypes.svg">
 - [superstruct](https://github.com/ianstormtaylor/superstruct) - The most popular modular validation library with good tree-shaking, <img align="top" height="24" src="./img/superstruct.svg">
 - [valibot](https://github.com/fabian-hiller/valibot) - Another modular validation library, <img align="top" height="24" src="./img/valibot.svg">
-- [deep-waters](https://github.com/antonioru/deep-waters) - Composable functional validators, <img align="top" height="24" src="./img/deep-waters-deep-waters-deep-waters-deep-waters-deep-waters-deep-waters.svg">.
+- [deep-waters](https://github.com/antonioru/deep-waters) - Composable functional validators, <img align="top" height="24" src="./img/deep-waterscompose-deep-watershasShape-deep-watersarrayOf-deep-watersisString-deep-watersisNumber-deep-watersisBoolean.svg">.
 
 ## Unique ID Generation
 
@@ -199,7 +199,7 @@ Honorable mentions: [any-touch](https://github.com/any86/any-touch) attempts a m
 Text search is important for client-side filtering and autosuggests. Naive `option.includes(search)` has no sensible order on the results, and ignoring word boundaries gives unexpected matches like _spa -> newSPAper._ First, here are some libraries that prioritize word matches:
 
 - [js-search](https://github.com/bvaughn/js-search) - Feature-rich and customizable: multi-field indices, stop words, custom stemmers and tokenizers. <img align="top" height="24" src="./img/js-search.svg">
-- [ndx](https://github.com/localvoid/ndx) - Similar to js-search, differs in [ranking](https://kmwllc.com/index.php/2020/03/20/understanding-tf-idf-and-bm-25/) and is less strict for multi-word queries [(compare)](https://leeoniya.github.io/uFuzzy/demos/compare.html?libs=js-search,ndx,Wade&search=twilight%20sag). Supports field weights. <img align="top" height="24" src="./img/ndx-ndx.svg">
+- [ndx](https://github.com/localvoid/ndx) - Similar to js-search, differs in [ranking](https://kmwllc.com/index.php/2020/03/20/understanding-tf-idf-and-bm-25/) and is less strict for multi-word queries [(compare)](https://leeoniya.github.io/uFuzzy/demos/compare.html?libs=js-search,ndx,Wade&search=twilight%20sag). Supports field weights. <img align="top" height="24" src="./img/ndx-ndxquery.svg">
 - [wade](https://github.com/kbrsh/wade) - Also similar, [(compare)](https://leeoniya.github.io/uFuzzy/demos/compare.html?libs=js-search,Wade,ndx&search=twilight%20sag) <img align="top" height="24" src="./img/wade.svg">
 - [libsearch](https://github.com/thesephist/libsearch) - Index-free search (slower, but easier to use) with sane ordering <img align="top" height="24" src="./img/libsearch.svg">
 

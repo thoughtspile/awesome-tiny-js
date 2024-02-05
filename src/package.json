@@ -1,5 +1,5 @@
 {
-  "name": "src",
+  "name": "awesome-tiny-js",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,7 +13,6 @@
     "badge-maker": "^3.3.1",
     "esbuild": "^0.20.0",
     "execa": "^8.0.1",
-    "pretty-bytes": "^6.1.1",
-    "terser": "^5.27.0"
+    "pretty-bytes": "^6.1.1"
   }
 }

@@ -36,7 +36,7 @@ Tiny front-end libraries to put your bundle on a diet. Rules:
 
 UI frameworks (libraries?) provide declarative templates, event bindings, and observable state to update the view. I've been generous and expanded the size limit for this category to 4.5 kB (if you're boring, count them as 2 libraries), but also increased the star limit to 2K. 
 
-- [preact](https://github.com/preactjs/preact) - React-like API (pre-hooks). Cool ecosystem of similarly tiny tools and components. Highly recommended. <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=preact&treeshake=[{+h,render,Component+}]">
+- [preact](https://github.com/preactjs/preact) - React-like API (pre-hooks). Cool ecosystem of similarly tiny tools and components. Highly recommended. <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=preact&treeshake=[{+h,Component,Fragment,render+}]">
 
 The following libraries are small and cool, but note they're about [500x less popular than preact.](https://npmtrends.com/preact-vs-hyperapp-vs-redom) Kudos for deconstrucing the very essence of a "framework":
 
@@ -45,7 +45,7 @@ The following libraries are small and cool, but note they're about [500x less po
 
 Now, for the [openly experimental](https://npmtrends.com/@arrow-js/core-vs-fre-vs-hyperapp-vs-redom-vs-superfine-vs-vanjs-core) UI libraries:
 
-- [fre](https://github.com/frejs/fre) - React-like library with hooks and concurrency, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=fre&treeshake=[{+render,useState+}]">
+- [fre](https://github.com/frejs/fre) - React-like library with hooks and concurrency, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=fre&treeshake=[{h,Fragment,useState,useRef,useMemo,useEffect,render,memo}]">
 - [van](https://github.com/vanjs-org/van) - vDOM-based framework optimized for no-build setups, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=vanjs-core&treeshake=[{+default+}]">
 - [superfine](https://github.com/jorgebucaran/superfine) - Hyperapp with state & effect hooks removed, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=superfine&treeshake=[{+h,text,patch+}]">
 - [arrowjs](https://github.com/justin-schroeder/arrow-js) - Tagged templates + reactive data, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=@arrow-js/core&treeshake=[*]">
@@ -77,12 +77,12 @@ Honorable mention: [oby](https://github.com/vobyjs/oby) _could_ make it _if_ it 
 
 State managers combine observable state with actions and framework bindings, intended for app-wide state.
 
-- [zustand](https://github.com/pmndrs/zustand) - Simple stores with pleasant actions and selectors. React <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=zustand&treeshake=[*]">
-- [nanostores](https://github.com/nanostores/nanostores) - Modular store with good tree-shaking support, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=nanostores&treeshake=[*]">).
-- [exome](https://github.com/marcisbee/exome) - Atomic stores with lots of framework connectors, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=exome&treeshake=[*]"> + e.g. React <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=exome/react&treeshake=[*]">
-- [storeon](https://github.com/storeon/storeon) - Minimal redux-styled store with lots of framework connectors, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=storeon&treeshake=[*]">
-- [unistore](https://github.com/developit/unistore) - Centralized store with actions for React / preact, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=unistore&treeshake=[{default}]">
-- [teaful](https://github.com/teafuljs/teaful) - Store with useState-like API for React / preact, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=teaful&treeshake=[{default}]">
+- [zustand](https://github.com/pmndrs/zustand) - Simple stores with pleasant actions and selectors. Vanilla <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=zustand/vanilla&treeshake=[*]">, React <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=zustand&treeshake=[*]">
+- [nanostores](https://github.com/nanostores/nanostores) - Modular store with good tree-shaking support, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=nanostores&treeshake=[{atom,action,computed}]"> vanilla, + React <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=@nanostores/react&treeshake=[*]"> extra. Supports all the top frameworks.
+- [exome](https://github.com/marcisbee/exome) - Atomic stores with lots of framework connectors, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=exome&treeshake=[*]"> + React <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=exome/react&treeshake=[*]"> extra. Supports all the top frameworks.
+- [storeon](https://github.com/storeon/storeon) - Minimal redux-styled store with lots of framework connectors, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=storeon&treeshake=[{createStoreon}]">. React extra <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=storeon/react&treeshake=[{useStoreon}]"> + Vue, Svelte, Angular.
+- [unistore](https://github.com/developit/unistore) - Centralized store with actions, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=unistore&treeshake=[{default}]"> + React <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=unistore/react&treeshake=[*]">
+- [teaful](https://github.com/teafuljs/teaful) - Store with useState-like API, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=teaful&treeshake=[{default}]">, including React / preact connector.
 
 ## Routers and URL Utils
 
@@ -114,7 +114,7 @@ If for some reason you still need a fetch polyfill, try this one:
 
 A map of strings might seem enough to translate an app, but these tools also handle interpolation and some extra goodies:
 
-- [@nanostores/i18n](https://github.com/nanostores/i18n) - Detect locale, load dictionaries, format dates / numbers, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=@nanostores/i18n&treeshake=[*]">
+- [@nanostores/i18n](https://github.com/nanostores/i18n) - Detect locale, load dictionaries, format dates / numbers, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=@nanostores/i18n&treeshake=[{localeFrom,browser,createI18n,params,count,formatter,createProcessor}]"> including nanostores.
 - [eo-locale](https://github.com/ibitcy/eo-locale) - Interpolation and dates / numbers, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=@eo-locale/core&treeshake=[*]">, or <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=@eo-locale/react&treeshake=[*]"> with react bindings.
 - [rosetta](https://github.com/lukeed/rosetta) - Bare-bones template strings (`{{hello}}, {{username}}`) and custom functions for everyting else, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=rosetta&treeshake=[{default}]">
 - [lingui](https://github.com/lingui/js-lingui) - Small core with template strings, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=@lingui/core&treeshake=[*]">
@@ -124,7 +124,7 @@ A map of strings might seem enough to translate an app, but these tools also han
 Date and time manipulation in pure JS is verbose. Luckily, two of the top date libraries have sensible size:
 
 - [date-fns](https://github.com/date-fns/date-fns/) - Not tiny as a whole, but [most functions](https://bundlephobia.com/package/date-fns) are under 1 kB each (format and parse are quite heavy).
-- [dayjs](https://github.com/iamkun/dayjs) - _Almost_ moment.js-compatible API, covers most use cases, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=dayjs&treeshake=[*]">
+- [dayjs](https://github.com/iamkun/dayjs) - _Almost_ moment.js-compatible API, covers most use cases, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=dayjs/esm&treeshake=[*]">
 
 And some more packages that only do formatting:
 
