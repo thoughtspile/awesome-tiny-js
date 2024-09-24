@@ -12,15 +12,16 @@ Tiny front-end libraries to put your bundle on a diet. Rules:
 - For multi-purpose libraries, the size of a useful subset must be under 2 kB-ish.
 - Useful client-side. I haven't figured out participation rules for node-only libraries, and I'm not too worried about them.
 - Second-level libraries only allowed for React, Vue, Angular, svelte. 
-- 100+ GitHub stars. Libraries with less are awesome, too, but stars indicate some community review.
+- 100+ GitHub stars _or_ 500+ weekly npm installs to focus on tools with some community review.
 - No zero-JS (CSS- or type-only) libraries. It's not awesome-css or something.
 
 ## Contents
 
 - [UI Frameworks](#ui-frameworks)
 - [Event Emitters](#event-emitters)
-- [Reactive Programming](#reactive-programming)
 - [State Managers](#state-managers)
+  - [Signals](#signals)
+  - [Reactive Programming](#reactive-programming)
 - [Routers and URL Utils](#routers-and-url-utils)
 - [API Layer](#api-layer)
 - [I18N](#i18n)
@@ -62,27 +63,34 @@ Event emitter pattern is fairly easy to implement yourself, but why bother when 
 - [nanoevents](https://github.com/ai/nanoevents) - Nicer unsubscribe API, but no `*` event, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=nanoevents&treeshake=[*]">
 - [onfire.js](https://github.com/hustcc/onfire.js) - Also has `.once` method, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=onfire.js&treeshake=[{default}]">
 
-## Reactive Programming
-
-A step up from a raw event emitter, reactive libraries can build chains of event transforms, filters, and side-effects. You can already use these to build UIs by manually updating DOM on state change:
-
-- [flyd](https://github.com/paldepind/flyd) - Rx-styled event streams, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=flyd&treeshake=[*]">
-- [callbag-basics](https://github.com/staltz/callbag-basics) - Rx-style event streams, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=callbag-basics&treeshake=[*]">
-- [hyperactiv](https://github.com/elbywan/hyperactiv) - 4 functions to make objects observable and listen to changes (mobx-style), <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=hyperactiv">
-- [flimsy](https://github.com/fabiospampinato/flimsy) - Signals from Solid (it _almost_ fit into UI frameworks category itself). Author warning: _it's probably buggy._ <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=flimsy&treeshake=[*]">
-
-Honorable mention: [oby](https://github.com/vobyjs/oby) _could_ make it _if_ it had tree-shaking, but otherwise is around 7 kB.
-
 ## State Managers
 
 State managers combine observable state with actions and framework bindings, intended for app-wide state.
 
 - [zustand](https://github.com/pmndrs/zustand) - Simple stores with pleasant actions and selectors. Vanilla <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=zustand/vanilla&treeshake=[*]">, React <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=zustand&treeshake=[*]">
-- [nanostores](https://github.com/nanostores/nanostores) - Modular store with good tree-shaking support, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=nanostores&treeshake=[{atom,action,computed}]"> vanilla, + React <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=@nanostores/react&treeshake=[*]"> extra. Supports all the top frameworks.
+- [nanostores](https://github.com/nanostores/nanostores) - Modular store with good tree-shaking support, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=nanostores&treeshake=[{atom,computed}]"> vanilla, + React <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=@nanostores/react&treeshake=[*]"> extra. Supports all the top frameworks.
 - [exome](https://github.com/marcisbee/exome) - Atomic stores with lots of framework connectors, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=exome&treeshake=[*]"> + React <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=exome/react&treeshake=[*]"> extra. Supports all the top frameworks.
 - [storeon](https://github.com/storeon/storeon) - Minimal redux-styled store with lots of framework connectors, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=storeon&treeshake=[{createStoreon}]">. React extra <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=storeon/react&treeshake=[{useStoreon}]"> + Vue, Svelte, Angular.
 - [unistore](https://github.com/developit/unistore) - Centralized store with actions, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=unistore&treeshake=[{default}]"> + React <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=unistore/react&treeshake=[*]">
 - [teaful](https://github.com/teafuljs/teaful) - Store with useState-like API, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=teaful&treeshake=[{default}]">, including React / preact connector.
+
+### Signals
+
+A signal-styled state manager provides observable values (aka _signals_), derived values and effects.
+
+- [@preact/signals](https://github.com/preactjs/signals) - The OG signals from preact <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=@preact/signals-core&treeshake=[*]"> core, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=@preact/signals-react&treeshake=[*]&config={%22esbuild%22:{%22external%22:[%22react%22,%22use-sync-external-store%22]}}"> with react integration.
+- [usignal](https://github.com/WebReflection/usignal) - A smaller signal implementation, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=usignal&treeshake=[*]">
+- [hyperactiv](https://github.com/elbywan/hyperactiv) - 4 functions to make objects observable and listen to changes, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=hyperactiv">
+- [flimsy](https://github.com/fabiospampinato/flimsy) - Signals from Solid (it _almost_ fit into UI frameworks category itself). Author warning: _it's probably buggy._ <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=flimsy&treeshake=[*]">
+
+Honorable mention: [oby](https://github.com/vobyjs/oby) _could_ make it _if_ it had tree-shaking, but otherwise is around 7 kB.
+
+### Reactive Programming
+
+Another well-known state management approach is reactive programmning — operating on event streams, applying filters and transforms to end up with an observable value. Think RxJS, but tiny:
+
+- [flyd](https://github.com/paldepind/flyd) - Rx-styled event streams, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=flyd&treeshake=[*]">
+- [callbag-basics](https://github.com/staltz/callbag-basics) - Rx-style event streams, <img align="top" height="24" src="https://deno.bundlejs.com/badge?q=callbag-basics&treeshake=[*]">
 
 ## Routers and URL Utils
 
