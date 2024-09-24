@@ -9,11 +9,6 @@
 - https://github.com/nextapps-de/mikado/
 - https://github.com/LeaVerou/bliss
 
-## Signals
-
-- https://github.com/preactjs/signals
-- https://github.com/WebReflection/usignal
-
 ## Components
 
 - https://github.com/vuejs-tips/v-money
