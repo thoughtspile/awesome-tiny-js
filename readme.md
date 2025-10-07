@@ -153,6 +153,7 @@ Something you'd find in lodash or ramda, but smaller. Most are pretty similar an
 - [rambda](https://github.com/selfrefactor/rambda) - 187 tree-shakable helpers [(list).](https://bundlephobia.com/package/rambda)
 - [just](https://github.com/angus-c/just) - 82 helpers in separate packages [(list).](https://anguscroll.com/just/)
 - [@fxts/core](https://github.com/marpple/FxTS) - 96 tree-shakable helpers. Lazy evaluation support.
+- [nano-string-utils](https://github.com/Zheruel/nano-string-utils) - 48 tree-shakable string utilities. Case conversion, validation, templates, fuzzy matching. <img align="top" height="24" src="./img/nano-string-utils.svg">
 
 Honorable mention: [underscore,](https://github.com/jashkenas/underscore) contains many sub-1 kB helpers. It does not tree-shake as well as the libraries above due to codebase structure.
 
